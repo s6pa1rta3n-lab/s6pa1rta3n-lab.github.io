@@ -454,6 +454,7 @@ describe('EMPIRICAL CHALLENGER & ADVERSARIAL STRESS TEST SUITE', () => {
         /Strategy & Ops/i,
         /Research Blog/i,
         /Grants/i,
+        /Portfolio/i,
         /Affiliates/i,
         /Marketplace/i,
         /Pitch/i,

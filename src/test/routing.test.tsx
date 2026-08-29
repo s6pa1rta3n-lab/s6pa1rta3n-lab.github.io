@@ -75,6 +75,18 @@ describe('HashRouter Navigation & Shell Verification', () => {
     expect(screen.getByText(/MEV-Protected DeFi Keeper/i)).toBeInTheDocument();
   });
 
+  it('navigates to Portfolio page when clicking navbar link', async () => {
+    render(<App />);
+    
+    const portfolioLinks = screen.getAllByRole('link', { name: /Portfolio/i });
+    fireEvent.click(portfolioLinks[0]);
+
+    expect(screen.getByRole('heading', { name: /Proof of Work & Ecosystem Contributions/i })).toBeInTheDocument();
+    expect(screen.getByText(/Total PRs/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/Repositories/i)[0]).toBeInTheDocument();
+    expect(screen.getAllByText(/Merged PRs/i)[0]).toBeInTheDocument();
+  });
+
   it('renders live telemetry pill and verified settlement addresses in footer', async () => {
     render(<App />);
     

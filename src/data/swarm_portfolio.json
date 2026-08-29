@@ -1,0 +1,1394 @@
+[
+  {
+    "repository": "ADG-VITV/RepoRaid",
+    "html_url": "https://github.com/ADG-VITV/RepoRaid",
+    "total_prs": 23,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "Implement update_contact_information() (Fixes #37)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/188",
+        "created_at": "2026-07-29T02:00:34Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement create_account() (Fixes #19)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/187",
+        "created_at": "2026-07-29T01:50:44Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement get_account() (Fixes #20)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/186",
+        "created_at": "2026-07-29T01:50:37Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement transfer_funds() (Fixes #24)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/185",
+        "created_at": "2026-07-29T01:50:35Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement generate_account_statement() (Fixes #26)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/184",
+        "created_at": "2026-07-29T01:50:33Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement get_transaction_history() (Fixes #33)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/183",
+        "created_at": "2026-07-29T01:50:30Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement withdraw() (Fixes #28)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/182",
+        "created_at": "2026-07-29T01:50:28Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement apply_interest() (Fixes #35)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/181",
+        "created_at": "2026-07-28T19:10:14Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement process_loan_payments() (Fixes #29)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/180",
+        "created_at": "2026-07-28T19:10:12Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement overdraft_protection() (Fixes #33)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/179",
+        "created_at": "2026-07-28T19:10:10Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement generate_financial_report() (Fixes #36)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/178",
+        "created_at": "2026-07-28T19:10:07Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement update_contact_information() (Fixes #37)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/177",
+        "created_at": "2026-07-28T19:10:05Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement suspend_account() (Fixes #32)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/176",
+        "created_at": "2026-07-28T18:49:42Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement view_account_details() (Fixes #31)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/175",
+        "created_at": "2026-07-28T18:49:39Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement get_balance() (Fixes #30)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/174",
+        "created_at": "2026-07-28T18:49:37Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement calculate_total_assets() (Fixes #27)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/173",
+        "created_at": "2026-07-28T18:49:35Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement deposit() (Fixes #25)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/172",
+        "created_at": "2026-07-28T18:49:32Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement lost_colony() (Fixes #16)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/171",
+        "created_at": "2026-07-28T18:41:58Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement black_hole() (Fixes #18)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/170",
+        "created_at": "2026-07-28T18:41:45Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement list_accounts() (Fixes #21)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/169",
+        "created_at": "2026-07-28T18:41:43Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement ancient_ruins() (Fixes #15)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/168",
+        "created_at": "2026-07-28T18:40:37Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement space_pirates() (Fixes #14)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/167",
+        "created_at": "2026-07-28T18:40:04Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Implement close_account() (Fixes #23)",
+        "state": "open",
+        "url": "https://github.com/ADG-VITV/RepoRaid/pull/166",
+        "created_at": "2026-07-28T18:39:45Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "Stellar-IndigoPay/Stellar-IndigoPay",
+    "html_url": "https://github.com/Stellar-IndigoPay/Stellar-IndigoPay",
+    "total_prs": 11,
+    "merged_prs": 6,
+    "prs": [
+      {
+        "title": "feat: server-state management consolidation via react-query (#1133)",
+        "state": "open",
+        "url": "https://github.com/Stellar-IndigoPay/Stellar-IndigoPay/pull/1186",
+        "created_at": "2026-08-26T14:45:28Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Fix 1146: Frontend testing completeness",
+        "state": "open",
+        "url": "https://github.com/Stellar-IndigoPay/Stellar-IndigoPay/pull/1180",
+        "created_at": "2026-08-25T22:52:59Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Fix #1140: Manifest V3 CSP and configurable presets",
+        "state": "closed",
+        "url": "https://github.com/Stellar-IndigoPay/Stellar-IndigoPay/pull/1179",
+        "created_at": "2026-08-25T20:45:05Z",
+        "closed_at": "2026-08-26T18:41:54Z",
+        "is_merged": true
+      },
+      {
+        "title": "feat: Add canary analysis template and contract deploy verification (#1141)",
+        "state": "open",
+        "url": "https://github.com/Stellar-IndigoPay/Stellar-IndigoPay/pull/1176",
+        "created_at": "2026-08-25T17:59:46Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Fix #1138: Notification routing and grouping",
+        "state": "closed",
+        "url": "https://github.com/Stellar-IndigoPay/Stellar-IndigoPay/pull/1175",
+        "created_at": "2026-08-25T17:59:06Z",
+        "closed_at": "2026-08-25T18:29:21Z",
+        "is_merged": true
+      },
+      {
+        "title": "feat: Add visual regression and Storybook interaction tests (#1146)",
+        "state": "closed",
+        "url": "https://github.com/Stellar-IndigoPay/Stellar-IndigoPay/pull/1174",
+        "created_at": "2026-08-25T17:59:03Z",
+        "closed_at": "2026-08-26T03:08:28Z",
+        "is_merged": false
+      },
+      {
+        "title": "Indexer and transaction reliability: ledger checkpoint replay + fee-bump support for stuck transactions (#1127)",
+        "state": "closed",
+        "url": "https://github.com/Stellar-IndigoPay/Stellar-IndigoPay/pull/1164",
+        "created_at": "2026-08-25T10:47:01Z",
+        "closed_at": "2026-08-25T18:32:57Z",
+        "is_merged": true
+      },
+      {
+        "title": "Secure and universal donation access: E2E message encryption + multi-wallet support (#1131)",
+        "state": "closed",
+        "url": "https://github.com/Stellar-IndigoPay/Stellar-IndigoPay/pull/1163",
+        "created_at": "2026-08-25T10:46:58Z",
+        "closed_at": "2026-08-25T21:35:40Z",
+        "is_merged": true
+      },
+      {
+        "title": "Mobile key security: hardware-backed signing + offline QR-based air-gapped signing (#1137)",
+        "state": "closed",
+        "url": "https://github.com/Stellar-IndigoPay/Stellar-IndigoPay/pull/1162",
+        "created_at": "2026-08-25T10:46:55Z",
+        "closed_at": "2026-08-25T21:35:09Z",
+        "is_merged": true
+      },
+      {
+        "title": "Mobile wallet key lifecycle: signed version-gated OTA updates + Shamir's Secret Sharing recovery (#1139)",
+        "state": "closed",
+        "url": "https://github.com/Stellar-IndigoPay/Stellar-IndigoPay/pull/1161",
+        "created_at": "2026-08-25T10:46:52Z",
+        "closed_at": "2026-08-25T12:08:19Z",
+        "is_merged": true
+      },
+      {
+        "title": "Bounty Deliverables: Critical Security and Reliability Implementations (#1139, #1137, #1131, #1127)",
+        "state": "closed",
+        "url": "https://github.com/Stellar-IndigoPay/Stellar-IndigoPay/pull/1160",
+        "created_at": "2026-08-25T05:25:46Z",
+        "closed_at": "2026-08-25T10:47:15Z",
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "StellarCheckMate/Checkmate-Escrow",
+    "html_url": "https://github.com/StellarCheckMate/Checkmate-Escrow",
+    "total_prs": 9,
+    "merged_prs": 5,
+    "prs": [
+      {
+        "title": "feat(admin): pre-populate protocol configuration form fields with on-chain values (#1410)",
+        "state": "open",
+        "url": "https://github.com/StellarCheckMate/Checkmate-Escrow/pull/1468",
+        "created_at": "2026-08-28T06:26:45Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat(websocket): handle raw and JSON PING frames with automated PONG response (#1409)",
+        "state": "open",
+        "url": "https://github.com/StellarCheckMate/Checkmate-Escrow/pull/1467",
+        "created_at": "2026-08-28T06:22:51Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat(deploy): add post-deployment health check verification and RPC metadata (#1416)",
+        "state": "open",
+        "url": "https://github.com/StellarCheckMate/Checkmate-Escrow/pull/1466",
+        "created_at": "2026-08-28T06:21:07Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "ci: add cargo audit and cargo deny advisories scanning to pipeline (#1418)",
+        "state": "open",
+        "url": "https://github.com/StellarCheckMate/Checkmate-Escrow/pull/1465",
+        "created_at": "2026-08-28T06:20:07Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "fix(admin): handle ContractPaused error code gracefully and update state (#1415)",
+        "state": "closed",
+        "url": "https://github.com/StellarCheckMate/Checkmate-Escrow/pull/1464",
+        "created_at": "2026-08-28T06:19:24Z",
+        "closed_at": "2026-08-28T17:28:19Z",
+        "is_merged": true
+      },
+      {
+        "title": "feat(frontend): enforce minimum_stake and maximum_stake bounds in StakeAmountInput (#1408)",
+        "state": "closed",
+        "url": "https://github.com/StellarCheckMate/Checkmate-Escrow/pull/1463",
+        "created_at": "2026-08-28T06:17:52Z",
+        "closed_at": "2026-08-28T17:27:45Z",
+        "is_merged": true
+      },
+      {
+        "title": "fix(wallet): display dedicated message and install link for Freighter not installed (#1407)",
+        "state": "closed",
+        "url": "https://github.com/StellarCheckMate/Checkmate-Escrow/pull/1462",
+        "created_at": "2026-08-28T06:15:30Z",
+        "closed_at": "2026-08-28T17:27:27Z",
+        "is_merged": true
+      },
+      {
+        "title": "feat(frontend): validate game_id format for Lichess and Chess.com (#1406)",
+        "state": "closed",
+        "url": "https://github.com/StellarCheckMate/Checkmate-Escrow/pull/1461",
+        "created_at": "2026-08-28T06:13:53Z",
+        "closed_at": "2026-08-28T17:27:04Z",
+        "is_merged": true
+      },
+      {
+        "title": "feat(frontend): add Drips Wave contribution hub and leaderboard page (#1435)",
+        "state": "closed",
+        "url": "https://github.com/StellarCheckMate/Checkmate-Escrow/pull/1460",
+        "created_at": "2026-08-28T05:12:12Z",
+        "closed_at": "2026-08-28T17:26:37Z",
+        "is_merged": true
+      }
+    ]
+  },
+  {
+    "repository": "Bitcoindefi/runa",
+    "html_url": "https://github.com/Bitcoindefi/runa",
+    "total_prs": 9,
+    "merged_prs": 5,
+    "prs": [
+      {
+        "title": "feat(contract): Soroban item token and inventory shop (#15)",
+        "state": "closed",
+        "url": "https://github.com/Bitcoindefi/runa/pull/52",
+        "created_at": "2026-08-26T06:50:05Z",
+        "closed_at": "2026-08-26T23:24:58Z",
+        "is_merged": true
+      },
+      {
+        "title": "fix: prevent hero sprite from rendering over solid walls (#16)",
+        "state": "open",
+        "url": "https://github.com/Bitcoindefi/runa/pull/51",
+        "created_at": "2026-08-25T22:05:40Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat: Implement Soroban Smart Contracts (Issues #13, #14, #15)",
+        "state": "open",
+        "url": "https://github.com/Bitcoindefi/runa/pull/23",
+        "created_at": "2026-08-25T01:12:43Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "fix(render): separate actor and hero presentation in mapPane",
+        "state": "closed",
+        "url": "https://github.com/Bitcoindefi/runa/pull/22",
+        "created_at": "2026-08-25T00:30:16Z",
+        "closed_at": "2026-08-26T02:32:10Z",
+        "is_merged": true
+      },
+      {
+        "title": "fix: keep sidebar visible above 64 columns",
+        "state": "closed",
+        "url": "https://github.com/Bitcoindefi/runa/pull/21",
+        "created_at": "2026-08-25T00:29:42Z",
+        "closed_at": "2026-08-26T02:29:02Z",
+        "is_merged": true
+      },
+      {
+        "title": "fix: unify NPC interaction distance between view and enter",
+        "state": "closed",
+        "url": "https://github.com/Bitcoindefi/runa/pull/20",
+        "created_at": "2026-08-25T00:08:40Z",
+        "closed_at": "2026-08-26T03:07:27Z",
+        "is_merged": false
+      },
+      {
+        "title": "fix: remove oversized fieldGate override and rely on > tile transition",
+        "state": "closed",
+        "url": "https://github.com/Bitcoindefi/runa/pull/19",
+        "created_at": "2026-08-25T00:06:17Z",
+        "closed_at": "2026-08-25T17:26:03Z",
+        "is_merged": true
+      },
+      {
+        "title": "fix(mapa): abrir accesos peatonales a los jardines de la ciudad",
+        "state": "closed",
+        "url": "https://github.com/Bitcoindefi/runa/pull/18",
+        "created_at": "2026-08-25T00:02:29Z",
+        "closed_at": "2026-08-26T02:26:04Z",
+        "is_merged": true
+      },
+      {
+        "title": "fix(map): transparent spaces in art overlays and register missing tiles",
+        "state": "open",
+        "url": "https://github.com/Bitcoindefi/runa/pull/17",
+        "created_at": "2026-08-24T23:58:19Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "Sub-Rosa-Issue/sub-rosa-issue",
+    "html_url": "https://github.com/Sub-Rosa-Issue/sub-rosa-issue",
+    "total_prs": 6,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "chore(web): add copyright headers to web lib core helpers (#207)",
+        "state": "open",
+        "url": "https://github.com/Sub-Rosa-Issue/sub-rosa-issue/pull/230",
+        "created_at": "2026-08-26T15:06:18Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "chore: add copyright headers to web pages (#209)",
+        "state": "open",
+        "url": "https://github.com/Sub-Rosa-Issue/sub-rosa-issue/pull/226",
+        "created_at": "2026-08-26T03:34:11Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "chore: add copyright headers to web dashboard components (#210)",
+        "state": "open",
+        "url": "https://github.com/Sub-Rosa-Issue/sub-rosa-issue/pull/225",
+        "created_at": "2026-08-26T02:49:37Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "chore: add copyright headers to web hooks",
+        "state": "open",
+        "url": "https://github.com/Sub-Rosa-Issue/sub-rosa-issue/pull/224",
+        "created_at": "2026-08-26T02:33:37Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "chore(web): add copyright headers to web lib utilities (#208)",
+        "state": "open",
+        "url": "https://github.com/Sub-Rosa-Issue/sub-rosa-issue/pull/223",
+        "created_at": "2026-08-26T02:20:24Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "fix(tlock): harden hex helpers and add seal/open input validation",
+        "state": "open",
+        "url": "https://github.com/Sub-Rosa-Issue/sub-rosa-issue/pull/199",
+        "created_at": "2026-08-25T22:00:05Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "stolla-labs/stolla",
+    "html_url": "https://github.com/stolla-labs/stolla",
+    "total_prs": 6,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "feat: Add launch and invite kit to community deployment success (#263)",
+        "state": "open",
+        "url": "https://github.com/stolla-labs/stolla/pull/279",
+        "created_at": "2026-08-26T14:50:12Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Fixes #258: Add deterministic Community Metadata preview and download",
+        "state": "open",
+        "url": "https://github.com/stolla-labs/stolla/pull/275",
+        "created_at": "2026-08-26T14:25:07Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat: Make health endpoint factory and registry aware (#260)",
+        "state": "open",
+        "url": "https://github.com/stolla-labs/stolla/pull/274",
+        "created_at": "2026-08-26T11:58:21Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat: Show proposal discovery freshness and indexing limitations (Issue #264)",
+        "state": "open",
+        "url": "https://github.com/stolla-labs/stolla/pull/270",
+        "created_at": "2026-08-26T07:00:31Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Fixes #265: Align E2E CI with the root npm lockfile",
+        "state": "open",
+        "url": "https://github.com/stolla-labs/stolla/pull/269",
+        "created_at": "2026-08-26T03:19:20Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat: Centralize network and deployment capability configuration (#254)",
+        "state": "open",
+        "url": "https://github.com/stolla-labs/stolla/pull/268",
+        "created_at": "2026-08-26T03:05:39Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "RevenantLabs/RevyHub",
+    "html_url": "https://github.com/RevenantLabs/RevyHub",
+    "total_prs": 6,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "feat: Asset Supply and Holder Statistics (#291)",
+        "state": "open",
+        "url": "https://github.com/RevenantLabs/RevyHub/pull/298",
+        "created_at": "2026-08-26T14:04:58Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat: Account Merge Preflight Check",
+        "state": "open",
+        "url": "https://github.com/RevenantLabs/RevyHub/pull/297",
+        "created_at": "2026-08-26T13:59:01Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat: Issuer Authorization Flags Inspector (#294)",
+        "state": "open",
+        "url": "https://github.com/RevenantLabs/RevyHub/pull/296",
+        "created_at": "2026-08-26T13:06:00Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat: Sequence Number Inspector (#287)",
+        "state": "closed",
+        "url": "https://github.com/RevenantLabs/RevyHub/pull/295",
+        "created_at": "2026-08-26T12:20:00Z",
+        "closed_at": "2026-08-26T16:34:27Z",
+        "is_merged": false
+      },
+      {
+        "title": "feat: Account Data Entry Viewer (#284)",
+        "state": "open",
+        "url": "https://github.com/RevenantLabs/RevyHub/pull/289",
+        "created_at": "2026-08-26T08:51:01Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat: Sponsored Reserves Inspector (#286)",
+        "state": "open",
+        "url": "https://github.com/RevenantLabs/RevyHub/pull/288",
+        "created_at": "2026-08-26T07:18:58Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "Quittance-Labs/Quittance0",
+    "html_url": "https://github.com/Quittance-Labs/Quittance0",
+    "total_prs": 5,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "refactor(api): retire production mock API layer in favor of MVP backend fixtures (#233)",
+        "state": "open",
+        "url": "https://github.com/Quittance-Labs/Quittance0/pull/238",
+        "created_at": "2026-08-28T13:26:44Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat(monitor): wire automatic payment detection to invoice PAID status (#229)",
+        "state": "open",
+        "url": "https://github.com/Quittance-Labs/Quittance0/pull/237",
+        "created_at": "2026-08-28T13:23:16Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat(proof): overhaul payment proof generation for consistent quittance output (#228)",
+        "state": "open",
+        "url": "https://github.com/Quittance-Labs/Quittance0/pull/236",
+        "created_at": "2026-08-28T13:17:22Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat(contracts): introduce shared invoice API contracts across frontend and backend (#227)",
+        "state": "open",
+        "url": "https://github.com/Quittance-Labs/Quittance0/pull/235",
+        "created_at": "2026-08-28T13:05:45Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Add CI workflow and integration tests for the invoice payment loop",
+        "state": "open",
+        "url": "https://github.com/Quittance-Labs/Quittance0/pull/234",
+        "created_at": "2026-08-28T12:18:54Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "Drago-Labs/golden-raccoon",
+    "html_url": "https://github.com/Drago-Labs/golden-raccoon",
+    "total_prs": 5,
+    "merged_prs": 4,
+    "prs": [
+      {
+        "title": "Operations: Add SLO error budgets and an incident timeline (Draft)",
+        "state": "closed",
+        "url": "https://github.com/Drago-Labs/golden-raccoon/pull/121",
+        "created_at": "2026-08-27T00:08:55Z",
+        "closed_at": "2026-08-27T23:41:33Z",
+        "is_merged": true
+      },
+      {
+        "title": "Release: Add reproducible contract artifact provenance verification",
+        "state": "closed",
+        "url": "https://github.com/Drago-Labs/golden-raccoon/pull/119",
+        "created_at": "2026-08-26T08:06:31Z",
+        "closed_at": "2026-08-27T23:41:56Z",
+        "is_merged": false
+      },
+      {
+        "title": "feat(portfolio): add deterministic what-if stress testing (#109)",
+        "state": "closed",
+        "url": "https://github.com/Drago-Labs/golden-raccoon/pull/118",
+        "created_at": "2026-08-26T02:03:37Z",
+        "closed_at": "2026-08-27T23:41:33Z",
+        "is_merged": true
+      },
+      {
+        "title": "feat(watchlist): add chain-safe bulk import and export (#106)",
+        "state": "closed",
+        "url": "https://github.com/Drago-Labs/golden-raccoon/pull/117",
+        "created_at": "2026-08-26T01:49:03Z",
+        "closed_at": "2026-08-27T23:41:33Z",
+        "is_merged": true
+      },
+      {
+        "title": "feat(api): standardize typed API errors and recovery UX (#99)",
+        "state": "closed",
+        "url": "https://github.com/Drago-Labs/golden-raccoon/pull/114",
+        "created_at": "2026-08-26T00:13:24Z",
+        "closed_at": "2026-08-27T23:41:33Z",
+        "is_merged": true
+      }
+    ]
+  },
+  {
+    "repository": "Adamantine-guild/guildpass-sdk",
+    "html_url": "https://github.com/Adamantine-guild/guildpass-sdk",
+    "total_prs": 4,
+    "merged_prs": 3,
+    "prs": [
+      {
+        "title": "feat: implement runtime-safe configuration parser",
+        "state": "open",
+        "url": "https://github.com/Adamantine-guild/guildpass-sdk/pull/479",
+        "created_at": "2026-08-29T00:12:38Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat: Implement a typed GuildPass API transport",
+        "state": "closed",
+        "url": "https://github.com/Adamantine-guild/guildpass-sdk/pull/478",
+        "created_at": "2026-08-28T20:09:27Z",
+        "closed_at": "2026-08-28T22:18:44Z",
+        "is_merged": true
+      },
+      {
+        "title": "feat(time): Implement testable SDK clock abstraction",
+        "state": "closed",
+        "url": "https://github.com/Adamantine-guild/guildpass-sdk/pull/477",
+        "created_at": "2026-08-28T08:11:41Z",
+        "closed_at": "2026-08-28T12:13:13Z",
+        "is_merged": true
+      },
+      {
+        "title": "feat: implement runtime-safe Stellar account ID parser",
+        "state": "closed",
+        "url": "https://github.com/Adamantine-guild/guildpass-sdk/pull/476",
+        "created_at": "2026-08-28T04:10:25Z",
+        "closed_at": "2026-08-28T04:15:27Z",
+        "is_merged": true
+      }
+    ]
+  },
+  {
+    "repository": "Echo-Mirror-Butler/Echo-Mirror-Butler-",
+    "html_url": "https://github.com/Echo-Mirror-Butler/Echo-Mirror-Butler-",
+    "total_prs": 3,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "feat(sync): add conflict resolution for offline-edited entries (#702)",
+        "state": "open",
+        "url": "https://github.com/Echo-Mirror-Butler/Echo-Mirror-Butler-/pull/709",
+        "created_at": "2026-08-28T14:08:20Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat(anti-fraud): detect leaderboard/gift collusion before real ECHO payouts settle (#701)",
+        "state": "open",
+        "url": "https://github.com/Echo-Mirror-Butler/Echo-Mirror-Butler-/pull/708",
+        "created_at": "2026-08-28T14:05:46Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat(security): add field-level encryption for private notes and letters (#700)",
+        "state": "open",
+        "url": "https://github.com/Echo-Mirror-Butler/Echo-Mirror-Butler-/pull/707",
+        "created_at": "2026-08-28T14:03:47Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "OphirPay/OphirPay",
+    "html_url": "https://github.com/OphirPay/OphirPay",
+    "total_prs": 3,
+    "merged_prs": 1,
+    "prs": [
+      {
+        "title": "test(a11y): integrate Axe accessibility scans across key pages into E2E suite (#210)",
+        "state": "open",
+        "url": "https://github.com/OphirPay/OphirPay/pull/421",
+        "created_at": "2026-08-28T02:11:51Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "test: Webhook delivery + retry flow",
+        "state": "open",
+        "url": "https://github.com/OphirPay/OphirPay/pull/232",
+        "created_at": "2026-08-26T12:57:56Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat: Expand health-check with DB ping, RPC reachability, and contract presence (#198)",
+        "state": "closed",
+        "url": "https://github.com/OphirPay/OphirPay/pull/215",
+        "created_at": "2026-08-26T09:04:40Z",
+        "closed_at": "2026-08-27T06:33:09Z",
+        "is_merged": true
+      }
+    ]
+  },
+  {
+    "repository": "Adamantine-guild/guildpass-core",
+    "html_url": "https://github.com/Adamantine-guild/guildpass-core",
+    "total_prs": 3,
+    "merged_prs": 2,
+    "prs": [
+      {
+        "title": "feat: Implement a deterministic delegation graph evaluator with cycle detection",
+        "state": "closed",
+        "url": "https://github.com/Adamantine-guild/guildpass-core/pull/397",
+        "created_at": "2026-08-28T00:12:41Z",
+        "closed_at": "2026-08-28T00:14:43Z",
+        "is_merged": true
+      },
+      {
+        "title": "feat(governance): implement deterministic voting power snapshot calculator (#383)",
+        "state": "closed",
+        "url": "https://github.com/Adamantine-guild/guildpass-core/pull/391",
+        "created_at": "2026-08-26T20:13:09Z",
+        "closed_at": "2026-08-26T20:14:52Z",
+        "is_merged": true
+      },
+      {
+        "title": "feat(governance): implement deterministic voting power snapshot calculator (#383)",
+        "state": "closed",
+        "url": "https://github.com/Adamantine-guild/guildpass-core/pull/390",
+        "created_at": "2026-08-26T20:09:52Z",
+        "closed_at": "2026-08-26T20:11:41Z",
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "Micopay/micopaybridge",
+    "html_url": "https://github.com/Micopay/micopaybridge",
+    "total_prs": 3,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "fix(db): deduplicate bazaar table definitions (Fixes #31)",
+        "state": "open",
+        "url": "https://github.com/Micopay/micopaybridge/pull/37",
+        "created_at": "2026-08-26T08:44:08Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Fix: Allow permissionless release with secret (BRIDGE-15)",
+        "state": "open",
+        "url": "https://github.com/Micopay/micopaybridge/pull/36",
+        "created_at": "2026-08-26T07:37:01Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat(bazaar): add read endpoints for intent and quotes [BRIDGE-13]",
+        "state": "open",
+        "url": "https://github.com/Micopay/micopaybridge/pull/35",
+        "created_at": "2026-08-26T07:06:50Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "shanalikhan/code-settings-sync",
+    "html_url": "https://github.com/shanalikhan/code-settings-sync",
+    "total_prs": 3,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "Fix: Resolve aggressive upload/download conflict loops",
+        "state": "open",
+        "url": "https://github.com/shanalikhan/code-settings-sync/pull/1478",
+        "created_at": "2026-08-24T23:51:10Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Feature: Add Git Repository Sync Backend",
+        "state": "open",
+        "url": "https://github.com/shanalikhan/code-settings-sync/pull/1477",
+        "created_at": "2026-08-24T23:49:16Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Feature: Support syncing disabled extensions",
+        "state": "open",
+        "url": "https://github.com/shanalikhan/code-settings-sync/pull/1476",
+        "created_at": "2026-08-24T23:43:12Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "stellar-alerts-labs/stellar-alerts",
+    "html_url": "https://github.com/stellar-alerts-labs/stellar-alerts",
+    "total_prs": 2,
+    "merged_prs": 2,
+    "prs": [
+      {
+        "title": "feat(webhooks): implement 7-day health scorecard and degraded uptime diagnostics (#161)",
+        "state": "closed",
+        "url": "https://github.com/stellar-alerts-labs/stellar-alerts/pull/171",
+        "created_at": "2026-08-28T05:34:00Z",
+        "closed_at": "2026-08-28T08:20:44Z",
+        "is_merged": true
+      },
+      {
+        "title": "feat(api): configure v8 coverage provider and 85% threshold enforcement (#163)",
+        "state": "closed",
+        "url": "https://github.com/stellar-alerts-labs/stellar-alerts/pull/170",
+        "created_at": "2026-08-28T05:28:56Z",
+        "closed_at": "2026-08-28T12:06:01Z",
+        "is_merged": true
+      }
+    ]
+  },
+  {
+    "repository": "Stellar-split/split-sdk",
+    "html_url": "https://github.com/Stellar-split/split-sdk",
+    "total_prs": 2,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "feat(dedup): implement generateIdempotencyKey with canonical SHA-256 and key registry (#612)",
+        "state": "open",
+        "url": "https://github.com/Stellar-split/split-sdk/pull/724",
+        "created_at": "2026-08-28T02:04:37Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat(webhooks): export standalone verifyWebhookSignature with timingSafeEqual and WebhookVerificationError (#617)",
+        "state": "open",
+        "url": "https://github.com/Stellar-split/split-sdk/pull/723",
+        "created_at": "2026-08-28T02:02:24Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "Lilly-Protocol/lily-backend",
+    "html_url": "https://github.com/Lilly-Protocol/lily-backend",
+    "total_prs": 2,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "Fixes #71: Validate Stellar asset codes in the payments quote schema",
+        "state": "open",
+        "url": "https://github.com/Lilly-Protocol/lily-backend/pull/225",
+        "created_at": "2026-08-27T16:14:19Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Fix #74: Validate toAddress as a well-formed 56-character Stellar address",
+        "state": "open",
+        "url": "https://github.com/Lilly-Protocol/lily-backend/pull/223",
+        "created_at": "2026-08-27T09:23:57Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "LynxXProtocol/Pactum",
+    "html_url": "https://github.com/LynxXProtocol/Pactum",
+    "total_prs": 2,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "Draft: Save State - Fix #235",
+        "state": "open",
+        "url": "https://github.com/LynxXProtocol/Pactum/pull/238",
+        "created_at": "2026-08-26T13:35:05Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "refactor(frontend): extract shared @pactum/soroban-client workspace package (#231)",
+        "state": "open",
+        "url": "https://github.com/LynxXProtocol/Pactum/pull/237",
+        "created_at": "2026-08-26T12:20:17Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "stellar-creator-portfolio/stellar-creator-portfolio-",
+    "html_url": "https://github.com/stellar-creator-portfolio/stellar-creator-portfolio-",
+    "total_prs": 2,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "fix: offline mutation queue and background sync",
+        "state": "open",
+        "url": "https://github.com/stellar-creator-portfolio/stellar-creator-portfolio-/pull/104",
+        "created_at": "2026-08-26T08:22:05Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "Fix #101: Bind and authenticate cross-chain swap execution",
+        "state": "open",
+        "url": "https://github.com/stellar-creator-portfolio/stellar-creator-portfolio-/pull/103",
+        "created_at": "2026-08-26T07:55:57Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "hyperlane-xyz/hyperlane-monorepo",
+    "html_url": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
+    "total_prs": 2,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "feat: Piggy Bank Sponsor IGP (Issue #3392)",
+        "state": "open",
+        "url": "https://github.com/hyperlane-xyz/hyperlane-monorepo/pull/9334",
+        "created_at": "2026-08-25T05:23:01Z",
+        "closed_at": null,
+        "is_merged": false
+      },
+      {
+        "title": "feat: implement Keyfunder (#3400) and Yield Vault (#3391)",
+        "state": "open",
+        "url": "https://github.com/hyperlane-xyz/hyperlane-monorepo/pull/9333",
+        "created_at": "2026-08-25T04:08:05Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "AbleeGod/stellar-drips-protocol",
+    "html_url": "https://github.com/AbleeGod/stellar-drips-protocol",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "feat: implement EventHistory component (Closes #4)",
+        "state": "open",
+        "url": "https://github.com/AbleeGod/stellar-drips-protocol/pull/8",
+        "created_at": "2026-08-29T04:38:21Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "ANYTECHS/clips-backend",
+    "html_url": "https://github.com/ANYTECHS/clips-backend",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "docs: add Contribution Bounty Labels guide (fixes #869)",
+        "state": "open",
+        "url": "https://github.com/ANYTECHS/clips-backend/pull/875",
+        "created_at": "2026-08-29T04:36:25Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "Core-Foundry/Task-Bounty",
+    "html_url": "https://github.com/Core-Foundry/Task-Bounty",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "feat(export): add CSV export endpoint and utility for grant data (#161)",
+        "state": "open",
+        "url": "https://github.com/Core-Foundry/Task-Bounty/pull/169",
+        "created_at": "2026-08-28T13:09:11Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "Gatheraa/Gatherraa",
+    "html_url": "https://github.com/Gatheraa/Gatherraa",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "feat(backend): secure database synchronization and exact 32-byte event topic verification (#699, #689)",
+        "state": "open",
+        "url": "https://github.com/Gatheraa/Gatherraa/pull/702",
+        "created_at": "2026-08-28T02:19:20Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "Arena1X/InsightArena",
+    "html_url": "https://github.com/Arena1X/InsightArena",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "feat(security): webhook HMAC replay protection and persistent oracle reliability consensus (#1766, #1765)",
+        "state": "closed",
+        "url": "https://github.com/Arena1X/InsightArena/pull/1769",
+        "created_at": "2026-08-28T02:17:06Z",
+        "closed_at": "2026-08-28T14:22:22Z",
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "Vero-protocol/vero-sdk",
+    "html_url": "https://github.com/Vero-protocol/vero-sdk",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "fix(contract): stop submit() from re-signing with new sequence on transport retry (#86)",
+        "state": "closed",
+        "url": "https://github.com/Vero-protocol/vero-sdk/pull/88",
+        "created_at": "2026-08-27T22:07:30Z",
+        "closed_at": "2026-08-28T11:14:10Z",
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "Predictify-org/predictify-contracts",
+    "html_url": "https://github.com/Predictify-org/predictify-contracts",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "feat: stabilize public error mapping (#1380)",
+        "state": "open",
+        "url": "https://github.com/Predictify-org/predictify-contracts/pull/1385",
+        "created_at": "2026-08-27T22:07:00Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "Creditra/Creditra-Contracts",
+    "html_url": "https://github.com/Creditra/Creditra-Contracts",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "feat: preserve error encoding across migrations (#1127)",
+        "state": "open",
+        "url": "https://github.com/Creditra/Creditra-Contracts/pull/1132",
+        "created_at": "2026-08-27T22:06:10Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "Streampay-Org/StreamPay-Contracts",
+    "html_url": "https://github.com/Streampay-Org/StreamPay-Contracts",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "feat: harden pause and resume authorization (#152)",
+        "state": "open",
+        "url": "https://github.com/Streampay-Org/StreamPay-Contracts/pull/162",
+        "created_at": "2026-08-27T22:05:25Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "CalloraOrg/Callora-Contracts",
+    "html_url": "https://github.com/CalloraOrg/Callora-Contracts",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "feat: define atomic batch-distribution semantics (#1032)",
+        "state": "open",
+        "url": "https://github.com/CalloraOrg/Callora-Contracts/pull/1042",
+        "created_at": "2026-08-27T22:05:03Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "ZyntariHQ/Invoisio",
+    "html_url": "https://github.com/ZyntariHQ/Invoisio",
+    "total_prs": 1,
+    "merged_prs": 1,
+    "prs": [
+      {
+        "title": "fix: Register ThrottlerGuard and wire rate limiting across auth and api endpoints (#528)",
+        "state": "closed",
+        "url": "https://github.com/ZyntariHQ/Invoisio/pull/530",
+        "created_at": "2026-08-27T20:10:28Z",
+        "closed_at": "2026-08-28T07:48:51Z",
+        "is_merged": true
+      }
+    ]
+  },
+  {
+    "repository": "Lilly-Protocol/lily-contracts",
+    "html_url": "https://github.com/Lilly-Protocol/lily-contracts",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "fix(ci): align stellar-cli version with soroban-sdk 22",
+        "state": "open",
+        "url": "https://github.com/Lilly-Protocol/lily-contracts/pull/142",
+        "created_at": "2026-08-27T12:12:12Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "Adamantine-guild/guildpass-mobile",
+    "html_url": "https://github.com/Adamantine-guild/guildpass-mobile",
+    "total_prs": 1,
+    "merged_prs": 1,
+    "prs": [
+      {
+        "title": "feat(access): add retry affordance for individually failed/timed-out chains in multi-chain eligibility (#167)",
+        "state": "closed",
+        "url": "https://github.com/Adamantine-guild/guildpass-mobile/pull/291",
+        "created_at": "2026-08-26T13:19:14Z",
+        "closed_at": "2026-08-26T13:25:34Z",
+        "is_merged": true
+      }
+    ]
+  },
+  {
+    "repository": "Stellar-Prex/Oryn-Finance",
+    "html_url": "https://github.com/Stellar-Prex/Oryn-Finance",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "feat: #240 Implement Atomic Market Settlement",
+        "state": "open",
+        "url": "https://github.com/Stellar-Prex/Oryn-Finance/pull/246",
+        "created_at": "2026-08-26T12:34:20Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "Hollujay/Stellar-IndigoPay",
+    "html_url": "https://github.com/Hollujay/Stellar-IndigoPay",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "fix(ci): resolve flaky priceContext test",
+        "state": "closed",
+        "url": "https://github.com/Hollujay/Stellar-IndigoPay/pull/1",
+        "created_at": "2026-08-26T04:36:25Z",
+        "closed_at": "2026-08-26T14:12:21Z",
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "vestflow-labs/vestflow",
+    "html_url": "https://github.com/vestflow-labs/vestflow",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "feat(contract): Soroban Merkle schedule distributor",
+        "state": "closed",
+        "url": "https://github.com/vestflow-labs/vestflow/pull/584",
+        "created_at": "2026-08-25T19:06:54Z",
+        "closed_at": "2026-08-26T09:11:15Z",
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "CinnamonFaldet48/cli",
+    "html_url": "https://github.com/CinnamonFaldet48/cli",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "Fix #3: Prevent silent fallback on hard keyring errors",
+        "state": "open",
+        "url": "https://github.com/CinnamonFaldet48/cli/pull/12",
+        "created_at": "2026-08-25T17:36:15Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "LiliannaBruflat83/chi",
+    "html_url": "https://github.com/LiliannaBruflat83/chi",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "fix(middleware): halt execution chain after writing error response",
+        "state": "open",
+        "url": "https://github.com/LiliannaBruflat83/chi/pull/15",
+        "created_at": "2026-08-25T17:36:07Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "TrudieMasenheimer3/prometheus",
+    "html_url": "https://github.com/TrudieMasenheimer3/prometheus",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "Fix false positive truncation warning in /api/v1/query",
+        "state": "open",
+        "url": "https://github.com/TrudieMasenheimer3/prometheus/pull/19",
+        "created_at": "2026-08-25T17:36:02Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "abdulmajeedsualihu/Autokey",
+    "html_url": "https://github.com/abdulmajeedsualihu/Autokey",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "Fix syntax errors, formatting, and autokey cipher decryption logic",
+        "state": "open",
+        "url": "https://github.com/abdulmajeedsualihu/Autokey/pull/3",
+        "created_at": "2026-08-24T23:27:14Z",
+        "closed_at": null,
+        "is_merged": false
+      }
+    ]
+  },
+  {
+    "repository": "twentyhq/twenty",
+    "html_url": "https://github.com/twentyhq/twenty",
+    "total_prs": 1,
+    "merged_prs": 0,
+    "prs": [
+      {
+        "title": "fix(auth): add RFC 9207 iss parameter to OAuth authorization response",
+        "state": "closed",
+        "url": "https://github.com/twentyhq/twenty/pull/24725",
+        "created_at": "2026-08-24T22:47:51Z",
+        "closed_at": "2026-08-26T13:02:06Z",
+        "is_merged": false
+      }
+    ]
+  }
+]

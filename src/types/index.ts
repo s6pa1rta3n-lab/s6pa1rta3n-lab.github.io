@@ -88,3 +88,37 @@ export interface MarketplaceService {
   sampleResponse: Record<string, unknown>;
   badge?: string;
 }
+
+export interface PortfolioPR {
+  title: string;
+  state: 'open' | 'closed';
+  url: string;
+  created_at: string;
+  closed_at: string | null;
+  is_merged: boolean;
+}
+
+export interface PortfolioProject {
+  repository: string;
+  html_url: string;
+  total_prs: number;
+  merged_prs: number;
+  prs: PortfolioPR[];
+}
+
+export type PortfolioCategory =
+  | 'All'
+  | 'Stellar / Soroban'
+  | 'DeFi & Payments'
+  | 'Developer Tools & Infra'
+  | 'Bitcoin & L2';
+
+export interface PortfolioMetrics {
+  totalProjects: number;
+  totalPrs: number;
+  mergedPrs: number;
+  openPrs: number;
+  closedUnmergedPrs: number;
+  mergeRatePercent: number;
+}
+

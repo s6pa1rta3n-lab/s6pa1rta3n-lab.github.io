@@ -8,6 +8,7 @@ import { BlogPage } from './pages/BlogPage';
 import { GrantsPage } from './pages/GrantsPage';
 import { AffiliatesPage } from './pages/AffiliatesPage';
 import { MarketplacePage } from './pages/MarketplacePage';
+import { PortfolioPage } from './pages/PortfolioPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 
 export const App: React.FC = () => {
@@ -23,6 +24,8 @@ export const App: React.FC = () => {
             <Route path="/grants" element={<GrantsPage />} />
             <Route path="/affiliates" element={<AffiliatesPage />} />
             <Route path="/marketplace" element={<MarketplacePage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/proof-of-work" element={<Navigate to="/portfolio" replace />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Shell>

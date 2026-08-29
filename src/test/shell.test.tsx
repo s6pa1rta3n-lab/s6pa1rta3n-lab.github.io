@@ -6,14 +6,14 @@ import { Footer } from '../components/layout/Footer';
 import { Shell } from '../components/layout/Shell';
 
 describe('Shell Layout Component Tests', () => {
-  it('Navbar contains all 6 navigation items with badges', () => {
+  it('Navbar contains all 7 navigation items with badges', () => {
     render(
       <HashRouter>
         <Navbar />
       </HashRouter>
     );
 
-    expect(NAV_ITEMS).toHaveLength(6);
+    expect(NAV_ITEMS).toHaveLength(7);
     NAV_ITEMS.forEach((item) => {
       const linkElements = screen.getAllByRole('link', { name: new RegExp(item.name, 'i') });
       expect(linkElements.length).toBeGreaterThanOrEqual(1);

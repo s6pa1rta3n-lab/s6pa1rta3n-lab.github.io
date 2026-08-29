@@ -8,6 +8,7 @@ import {
   Coins, 
   Share2, 
   Store, 
+  GitPullRequest,
   Menu, 
   X, 
   Activity,
@@ -43,6 +44,13 @@ export const NAV_ITEMS: NavItem[] = [
     description: 'Stellar SCF, Octant & Cryptographic Proofs',
     icon: 'Coins',
     badge: 'Verified'
+  },
+  {
+    name: 'Portfolio',
+    path: '/portfolio',
+    description: '195+ PRs across 42 Ecosystem Repositories',
+    icon: 'GitPullRequest',
+    badge: '42 Projects'
   },
   {
     name: 'Affiliates',
@@ -94,6 +102,7 @@ export const Navbar: React.FC = () => {
       case 'FileText': return <FileText className="w-4 h-4" />;
       case 'BookOpen': return <BookOpen className="w-4 h-4" />;
       case 'Coins': return <Coins className="w-4 h-4" />;
+      case 'GitPullRequest': return <GitPullRequest className="w-4 h-4" />;
       case 'Share2': return <Share2 className="w-4 h-4" />;
       case 'Store': return <Store className="w-4 h-4" />;
       default: return <ShieldCheck className="w-4 h-4" />;
