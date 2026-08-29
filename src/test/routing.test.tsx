@@ -11,8 +11,8 @@ describe('HashRouter Navigation & Shell Verification', () => {
     render(<App />);
     expect(screen.getAllByText(/Universal/i)[0]).toBeInTheDocument();
     expect(screen.getAllByText(/Bounty Swarm/i)[0]).toBeInTheDocument();
-    expect(screen.getByText(/All Things Agentic Hackathon Entry/i)).toBeInTheDocument();
-    expect(screen.getByText(/Autonomous Labor Arbitrage/i)).toBeInTheDocument();
+    expect(screen.getByText(/24\/7 Autonomous AI Workforce • Production Proven/i)).toBeInTheDocument();
+    expect(screen.getByText(/Replace Your \$150k Dev Team/i)).toBeInTheDocument();
   });
 
   it('navigates to Strategy & Operations page when clicking navbar link', async () => {
@@ -34,7 +34,7 @@ describe('HashRouter Navigation & Shell Verification', () => {
     fireEvent.click(blogLinks[0]);
 
     expect(screen.getByPlaceholderText(/Search engineering dispatches/i)).toBeInTheDocument();
-    expect(screen.getByText(/Decentralized Multi-Agent Coordination via Firebase/i)).toBeInTheDocument();
+    expect(screen.getByText(/How We Built an Always-On AI Workforce/i)).toBeInTheDocument();
   });
 
   it('navigates to Grants & Payout Verification page when clicking navbar link', async () => {
@@ -44,7 +44,7 @@ describe('HashRouter Navigation & Shell Verification', () => {
     fireEvent.click(grantsLinks[0]);
 
     expect(screen.getByText(/Grants &/i)).toBeInTheDocument();
-    expect(screen.getByText(/Settlement Proofs/i)).toBeInTheDocument();
+    expect(screen.getByText(/Ecosystem Funding/i)).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /Stellar Community Fund \(SCF\)/i })).toBeInTheDocument();
     expect(screen.getAllByText(/0xF46C9F6d70C50BF81ef3588AB523a90a594a2F89/i)[0]).toBeInTheDocument();
     expect(screen.getAllByText(/GCL6OXAMLD75BMTINA6EMRUDWK5THQUSHMYNLSNBCJAPZJHNYJTUNIBC/i)[0]).toBeInTheDocument();
@@ -56,8 +56,7 @@ describe('HashRouter Navigation & Shell Verification', () => {
     const affiliatesLinks = screen.getAllByRole('link', { name: /Affiliates/i });
     fireEvent.click(affiliatesLinks[0]);
 
-    expect(screen.getByText(/Affiliate &/i)).toBeInTheDocument();
-    expect(screen.getByText(/Creator Program/i)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Partner & Affiliate Program/i })).toBeInTheDocument();
     expect(screen.getByText(/Dynamic Earnings Calculator/i)).toBeInTheDocument();
     expect(screen.getByText(/Bronze Scout/i)).toBeInTheDocument();
     expect(screen.getByText(/Diamond Syndicate/i)).toBeInTheDocument();
@@ -69,7 +68,7 @@ describe('HashRouter Navigation & Shell Verification', () => {
     const marketplaceLinks = screen.getAllByRole('link', { name: /Marketplace/i });
     fireEvent.click(marketplaceLinks[0]);
 
-    expect(screen.getByRole('heading', { name: /Swarm Marketplace/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Swarm AI Worker Marketplace/i })).toBeInTheDocument();
     expect(screen.getByText(/Universal Victory Auditor/i)).toBeInTheDocument();
     expect(screen.getByText(/Autonomous CI\/CD Fixer/i)).toBeInTheDocument();
     expect(screen.getByText(/MEV-Protected DeFi Keeper/i)).toBeInTheDocument();
@@ -81,7 +80,7 @@ describe('HashRouter Navigation & Shell Verification', () => {
     const portfolioLinks = screen.getAllByRole('link', { name: /Portfolio/i });
     fireEvent.click(portfolioLinks[0]);
 
-    expect(screen.getByRole('heading', { name: /Proof of Work & Ecosystem Contributions/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Verified Track Record & Proof of Work/i })).toBeInTheDocument();
     expect(screen.getByText(/Total PRs/i)).toBeInTheDocument();
     expect(screen.getAllByText(/Repositories/i)[0]).toBeInTheDocument();
     expect(screen.getAllByText(/Merged PRs/i)[0]).toBeInTheDocument();
@@ -109,12 +108,12 @@ describe('HashRouter Navigation & Shell Verification', () => {
     const vcTab = screen.getByRole('tab', { name: /VC Pitch Deck/i });
     fireEvent.click(vcTab);
 
-    expect(screen.getByText(/Ask: \$3.5M Seed @ \$22M Cap/i)).toBeInTheDocument();
+    expect(screen.getByText(/Ask: Seed Round to scale computing infrastructure/i)).toBeInTheDocument();
     expect(screen.getByText(/VC Pitch Deck Master Summary/i)).toBeInTheDocument();
 
     const scfTab = screen.getByRole('tab', { name: /Stellar SCF Grant/i });
     fireEvent.click(scfTab);
-    expect(screen.getByText(/Stellar Community Fund \(\$150,000 Award\)/i)).toBeInTheDocument();
+    expect(screen.getByText(/Universal Bounty Swarm: Dedicated Stellar AI Workforce/i)).toBeInTheDocument();
   });
 
   it('updates affiliate earnings calculator on slider change', async () => {

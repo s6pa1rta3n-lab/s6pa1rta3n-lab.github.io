@@ -28,7 +28,7 @@ export const PitchPage: React.FC = () => {
         <div className="flex flex-wrap items-center justify-center gap-3">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyber-cyan/10 border border-cyber-cyan/30 text-cyber-cyan text-xs font-mono">
             <Flame className="w-3.5 h-3.5" />
-            <span>All Things Agentic Hackathon Entry &bull; Autonomous Swarm Fleet</span>
+            <span>24/7 Autonomous AI Workforce &bull; Production Proven</span>
           </div>
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyber-volt/10 border border-cyber-volt/30 text-cyber-volt text-xs font-mono font-bold">
             <Award className="w-3.5 h-3.5" />
@@ -39,16 +39,16 @@ export const PitchPage: React.FC = () => {
         {/* Hero Title */}
         <div className="space-y-4">
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight font-mono text-slate-100">
-            Universal <span className="cyber-gradient-text">Bounty Swarm</span>
+            Replace Your $150k Dev Team <span className="cyber-gradient-text">For a Fraction of the Cost</span>
           </h1>
           <p className="text-lg sm:text-xl text-cyber-cyan font-mono font-medium max-w-3xl mx-auto">
-            The Autonomous Software Labor Force on Google Cloud
+            The Universal Bounty Swarm is a 24/7 AI workforce that writes code, fixes bugs, and ships features faster than humans ever could.
           </p>
         </div>
 
         {/* Sub-headline / Pitch Description */}
         <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-sans max-w-4xl mx-auto">
-          Moving beyond autocomplete chat copilots into true outcome-based labor arbitrage. A headless, event-driven multi-agent fleet powered by <strong className="text-slate-100">Gemini 3.5</strong> and the <strong className="text-slate-100">Google Antigravity SDK</strong> that ingests raw GitHub issues, writes verified code in isolated sandboxes, executes adversarial <strong className="text-cyber-volt">Victory Audits</strong>, and delivers guaranteed CI-passing Pull Requests 24/7.
+          Stop burning cash on routine engineering. An AI team that writes code, fixes bugs, and verifies its own work 24/7. Moving beyond autocomplete chat assistants into genuine outcome-based labor savings powered by <strong className="text-slate-100">Google Gemini</strong>, isolated cloud sandboxes, and independent <strong className="text-cyber-volt">Victory Audits</strong> that deliver tested, ready-to-merge Pull Requests in minutes.
         </p>
 
         {/* Primary CTAs & Jump Links */}
@@ -85,32 +85,43 @@ export const PitchPage: React.FC = () => {
           <div className="lg:col-span-7 space-y-4">
             <div className="flex items-center gap-2 text-xs font-mono font-bold text-cyber-volt uppercase tracking-wider">
               <TrendingDown className="w-4 h-4" />
-              <span>Core Value Proposition &bull; Outcome-Based Labor Arbitrage</span>
+              <span>Core Value Proposition &bull; Cost Savings & ROI</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-100 font-mono leading-tight">
-              Replacing <span className="text-rose-400 line-through">$150–$600/hr</span> Human Friction with{' '}
-              <span className="text-cyber-volt">$1.50–$10.00</span> Autonomous Compute
+              Stop Burning Cash on <span className="text-cyber-volt">Routine Engineering</span>
             </h2>
-            <p className="text-sm text-slate-300 font-sans leading-relaxed">
-              Traditional AI coding assistants act as $20/mo assistive toys requiring an expensive engineer in the IDE chair to prompt, review, and fix hallucinations. The Universal Bounty Swarm is <strong className="text-slate-100">Services-as-Software</strong>: tag the swarm on a GitHub issue, and receive a completed, forensic-audited, CI-passing PR in under 30 minutes.
+            <p className="text-xs font-mono text-cyber-cyan">
+              Replace $150–$600/hr Human Engineering with $0.02–$5.00 Autonomous AI Compute (90%+ Cost Savings)
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <p className="text-sm text-slate-300 font-sans leading-relaxed">
+              You don't need a senior engineer to fix typos, resolve dependency conflicts, or build standard forms. The Universal Bounty Swarm is an always-on AI workforce: assign a task in plain English, and receive a completed, independently audited, CI-passing pull request in under 30 minutes.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
               <div className="p-3.5 rounded-xl bg-obsidian-950/80 border border-slate-800 space-y-1">
                 <div className="text-xs font-mono font-bold text-slate-200 flex items-center gap-1.5">
                   <CheckCircle2 className="w-3.5 h-3.5 text-cyber-volt" />
-                  <span>90%+ Cost Arbitrage</span>
+                  <span>Always On</span>
                 </div>
                 <p className="text-xs text-slate-400 font-sans">
-                  From human developer salaries to headless serverless compute tokens.
+                  24/7 execution. No sleep, no weekends, no wait times.
                 </p>
               </div>
               <div className="p-3.5 rounded-xl bg-obsidian-950/80 border border-slate-800 space-y-1">
                 <div className="text-xs font-mono font-bold text-slate-200 flex items-center gap-1.5">
                   <CheckCircle2 className="w-3.5 h-3.5 text-cyber-cyan" />
-                  <span>Zero Babysitting (BYOF)</span>
+                  <span>Instant ROI</span>
                 </div>
                 <p className="text-xs text-slate-400 font-sans">
-                  Handles unstructured real-world bugs across EVM and Stellar protocols.
+                  Cut engineering payroll by up to 90% for maintenance.
+                </p>
+              </div>
+              <div className="p-3.5 rounded-xl bg-obsidian-950/80 border border-slate-800 space-y-1">
+                <div className="text-xs font-mono font-bold text-slate-200 flex items-center gap-1.5">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-cyber-emerald" />
+                  <span>Audited Code</span>
+                </div>
+                <p className="text-xs text-slate-400 font-sans">
+                  Independently audited by a second AI before delivery.
                 </p>
               </div>
             </div>
@@ -125,7 +136,7 @@ export const PitchPage: React.FC = () => {
             <div className="space-y-3 font-mono text-xs">
               <div className="flex items-center justify-between p-2 rounded-lg bg-obsidian-900">
                 <span className="text-slate-400">Average Resolution Latency:</span>
-                <span className="text-cyber-cyan font-bold">22.4 Seconds</span>
+                <span className="text-cyber-cyan font-bold">&lt; 30s to 30 Mins</span>
               </div>
               <div className="flex items-center justify-between p-2 rounded-lg bg-obsidian-900">
                 <span className="text-slate-400">Mean Compute Cost Per Issue:</span>
@@ -133,11 +144,11 @@ export const PitchPage: React.FC = () => {
               </div>
               <div className="flex items-center justify-between p-2 rounded-lg bg-obsidian-900">
                 <span className="text-slate-400">Victory Audit Pass Rate:</span>
-                <span className="text-cyber-emerald font-bold">100% Genuine</span>
+                <span className="text-cyber-emerald font-bold">100% Genuine (Zero Mocks)</span>
               </div>
               <div className="flex items-center justify-between p-2 rounded-lg bg-obsidian-900">
-                <span className="text-slate-400">Multi-Model Orchestration:</span>
-                <span className="text-cyber-violet font-bold">Gemini + Gemma + Veo</span>
+                <span className="text-slate-400">Verified Production PRs:</span>
+                <span className="text-cyber-violet font-bold">195+ across 42 Projects</span>
               </div>
             </div>
           </div>

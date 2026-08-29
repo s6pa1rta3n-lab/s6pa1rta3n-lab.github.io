@@ -56,18 +56,18 @@ export const Footer: React.FC = () => {
             </div>
 
             <p className="text-xs text-slate-400 leading-relaxed max-w-md">
-              An autonomous, stack-agnostic multi-agent fleet executing outcome-based labor arbitrage across Web3 and Web2 bounty markets, protocol keeper registries, and open-source grant programs.
+              The Universal Bounty Swarm is a 24/7 AI workforce that writes code, fixes bugs, and ships features at up to 90% lower cost than human developer payroll.
             </p>
 
             <div className="flex flex-wrap gap-2 pt-2">
               <span className="cyber-badge cyber-badge-cyan">
-                <Cpu className="w-3 h-3" /> Antigravity SDK
+                <Cpu className="w-3 h-3" /> Google Gemini
               </span>
               <span className="cyber-badge cyber-badge-volt">
-                <Terminal className="w-3 h-3" /> Firebase Stigmergy
+                <Terminal className="w-3 h-3" /> Cloud Run & Firestore
               </span>
               <span className="cyber-badge cyber-badge-violet">
-                <Layers className="w-3 h-3" /> OrbStack Sandboxes
+                <Layers className="w-3 h-3" /> Isolated Sandboxes
               </span>
             </div>
           </div>

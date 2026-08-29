@@ -19,13 +19,13 @@ export const AffiliatesPage: React.FC = () => {
       <div className="space-y-4 max-w-3xl">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyber-violet/10 border border-cyber-violet/30 text-cyber-violet text-xs font-mono">
           <Share2 className="w-3.5 h-3.5" />
-          <span>Creator & Partner Revenue-Share Program</span>
+          <span>Partner & Affiliate Program</span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-100 tracking-tight">
-          Affiliate & <span className="cyber-gradient-text">Creator Program</span>
+          Partner & <span className="cyber-gradient-text">Affiliate Program</span>
         </h1>
         <p className="text-sm text-slate-400 font-sans leading-relaxed">
-          Earn up to 25% recurring monthly revenue by introducing developer teams, DAOs, and protocols to Universal Bounty Swarm. Instant crypto or fiat payouts on every subscription and bounty settlement.
+          Earn up to 25% recurring monthly revenue by referring startups, DAOs, and engineering teams looking to slash development costs. Help your network save up to 90% on engineering maintenance while earning recurring commission.
         </p>
       </div>
 

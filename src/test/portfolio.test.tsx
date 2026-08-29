@@ -16,9 +16,9 @@ describe('Milestone 5 — Portfolio & Proof of Work Test Suite', () => {
     );
 
     // Header & Subtitle
-    expect(screen.getByText(/Proof of Work & Verifiable Track Record/i)).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /Proof of Work & Ecosystem Contributions/i })).toBeInTheDocument();
-    expect(screen.getByText(/Live multi-agent ledger of 195\+ Pull Requests/i)).toBeInTheDocument();
+    expect(screen.getByText(/Verified Track Record & Proof of Work/i)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Verified Track Record & Proof of Work/i })).toBeInTheDocument();
+    expect(screen.getByText(/Real results, not concepts\. Explore 195\+ automated pull requests/i)).toBeInTheDocument();
 
     // Aggregate Telemetry Metrics Ribbon
     expect(screen.getByText('195+')).toBeInTheDocument();

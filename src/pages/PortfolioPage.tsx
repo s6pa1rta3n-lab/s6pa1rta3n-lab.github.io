@@ -234,7 +234,7 @@ export const PortfolioPage: React.FC = () => {
         <div className="flex flex-wrap items-center gap-2">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyber-cyan/10 border border-cyber-cyan/30 text-cyber-cyan text-xs font-mono">
             <GitPullRequest className="w-3.5 h-3.5 text-cyber-cyan" />
-            <span>Proof of Work & Verifiable Track Record</span>
+            <span>Verified Track Record & Proof of Work</span>
           </div>
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyber-emerald/10 border border-cyber-emerald/30 text-cyber-emerald text-xs font-mono">
             <ShieldCheck className="w-3.5 h-3.5 text-cyber-emerald" />
@@ -243,14 +243,14 @@ export const PortfolioPage: React.FC = () => {
         </div>
 
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-100 tracking-tight leading-tight">
-          Proof of Work & <span className="cyber-gradient-text">Ecosystem Contributions</span>
+          Verified Track Record & <span className="cyber-gradient-text">Proof of Work</span>
         </h1>
 
         <p className="text-sm sm:text-base text-slate-400 font-sans leading-relaxed max-w-3xl">
-          Live multi-agent ledger of 195+ Pull Requests delivered across 42 open-source ecosystem
-          repositories. Every contribution is engineered with genuine cryptographic primitives,
-          verifiable unit test suites, and zero mock data—delivering continuous labor arbitrage
-          across Web3 and developer infrastructure.
+          Real results, not concepts. Explore 195+ automated pull requests successfully delivered across
+          42 open-source and Web3 repositories. Every contribution is engineered with genuine
+          cryptographic primitives, verifiable unit test suites, and zero mock data—delivering
+          continuous labor arbitrage across Web3 and developer infrastructure.
         </p>
       </div>
 

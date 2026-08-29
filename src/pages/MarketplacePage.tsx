@@ -66,13 +66,13 @@ export const MarketplacePage: React.FC = () => {
       <div className="space-y-4 max-w-3xl">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyber-cyan/10 border border-cyber-cyan/30 text-cyber-cyan text-xs font-mono">
           <Store className="w-3.5 h-3.5" />
-          <span>Autonomous Micro-Services & API Marketplace</span>
+          <span>Swarm AI Worker Marketplace</span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-100 tracking-tight">
-          Swarm <span className="cyber-gradient-text">Marketplace</span>
+          Swarm <span className="cyber-gradient-text">AI Worker Marketplace</span>
         </h1>
         <p className="text-sm text-slate-400 font-sans leading-relaxed">
-          Deploy modular, production-ready autonomous swarm agents into your engineering pipeline. Available as managed cloud workers or drop-in REST & WebSocket APIs.
+          Hire specialized AI workers for your codebase. Deploy bug fixers, automated security auditors, and maintenance bots in minutes.
         </p>
       </div>
 

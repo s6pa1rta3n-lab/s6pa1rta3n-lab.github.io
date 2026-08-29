@@ -21,8 +21,8 @@ describe('Milestone 4 — Marketplace Hub Test Suite', () => {
   it('renders MarketplacePage header, all 6 micro-services, and pricing matrix', () => {
     renderMarketplacePage();
 
-    expect(screen.getByText(/Autonomous Micro-Services & API Marketplace/i)).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /Swarm Marketplace/i })).toBeInTheDocument();
+    expect(screen.getByText(/Swarm AI Worker Marketplace/i)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Swarm AI Worker Marketplace/i })).toBeInTheDocument();
     expect(screen.getByPlaceholderText(/Search micro-services, tools & schemas.../i)).toBeInTheDocument();
 
     // Verify all 6 micro-services are rendered

@@ -22,7 +22,7 @@ describe('Milestone 4 — Blog Hub Test Suite', () => {
     renderBlogPage();
 
     expect(screen.getByText(/Research & Engineering Dispatches/i)).toBeInTheDocument();
-    expect(screen.getByText(/Research Blog/i)).toBeInTheDocument();
+    expect(screen.getByText(/Research Dispatches/i)).toBeInTheDocument();
     expect(screen.getByPlaceholderText(/Search engineering dispatches.../i)).toBeInTheDocument();
 
     // Verify all 4 articles are rendered
@@ -41,12 +41,12 @@ describe('Milestone 4 — Blog Hub Test Suite', () => {
 
     // Should display the Victory Audit post
     expect(
-      screen.getByText(/Why Zero-Mock Forensic Victory Audits Are Mandatory for Autonomous Software Labor/i)
+      screen.getByText(/The Victory Audit: How We Stop AI from Faking Tests/i)
     ).toBeInTheDocument();
 
     // Should NOT display the Firebase Stigmergy post
     expect(
-      screen.queryByText(/Decentralized Multi-Agent Coordination via Firebase Firestore Stigmergy/i)
+      screen.queryByText(/How We Built an Always-On AI Workforce with Sub-Second Response Times/i)
     ).not.toBeInTheDocument();
 
     // Click 'All' to restore
@@ -54,7 +54,7 @@ describe('Milestone 4 — Blog Hub Test Suite', () => {
     fireEvent.click(allBtn);
 
     expect(
-      screen.getByText(/Decentralized Multi-Agent Coordination via Firebase Firestore Stigmergy/i)
+      screen.getByText(/How We Built an Always-On AI Workforce with Sub-Second Response Times/i)
     ).toBeInTheDocument();
   });
 
@@ -67,12 +67,12 @@ describe('Milestone 4 — Blog Hub Test Suite', () => {
 
     // Should show architecture article
     expect(
-      screen.getByText(/Decentralized Multi-Agent Coordination via Firebase Firestore Stigmergy/i)
+      screen.getByText(/How We Built an Always-On AI Workforce with Sub-Second Response Times/i)
     ).toBeInTheDocument();
 
     // Should not show MEV article
     expect(
-      screen.queryByText(/Autonomous Protocol Keepers: Zero-Loss MEV Protection on Base and Arbitrum/i)
+      screen.queryByText(/Autonomous Protocol Maintenance: Zero-Loss Execution for DeFi Protocols/i)
     ).not.toBeInTheDocument();
 
     // Clear tag filter
@@ -80,7 +80,7 @@ describe('Milestone 4 — Blog Hub Test Suite', () => {
     fireEvent.click(clearTagBtn);
 
     expect(
-      screen.getByText(/Autonomous Protocol Keepers: Zero-Loss MEV Protection on Base and Arbitrum/i)
+      screen.getByText(/Autonomous Protocol Maintenance: Zero-Loss Execution for DeFi Protocols/i)
     ).toBeInTheDocument();
   });
 
@@ -93,11 +93,11 @@ describe('Milestone 4 — Blog Hub Test Suite', () => {
     fireEvent.change(searchInput, { target: { value: 'Soroban' } });
 
     expect(
-      screen.getByText(/Building Instant Soroban Smart Contract Escrows for Open Source Bounties/i)
+      screen.getByText(/Automating Open-Source Bounties: Instant Smart Contract Escrows on Stellar/i)
     ).toBeInTheDocument();
 
     expect(
-      screen.queryByText(/Autonomous Protocol Keepers: Zero-Loss MEV Protection on Base and Arbitrum/i)
+      screen.queryByText(/Autonomous Protocol Maintenance: Zero-Loss Execution for DeFi Protocols/i)
     ).not.toBeInTheDocument();
   });
 
@@ -113,7 +113,7 @@ describe('Milestone 4 — Blog Hub Test Suite', () => {
     fireEvent.click(resetBtn);
 
     expect(
-      screen.getByText(/Decentralized Multi-Agent Coordination via Firebase Firestore Stigmergy/i)
+      screen.getByText(/How We Built an Always-On AI Workforce with Sub-Second Response Times/i)
     ).toBeInTheDocument();
   });
 
@@ -121,7 +121,7 @@ describe('Milestone 4 — Blog Hub Test Suite', () => {
     renderBlogPage();
 
     // Click on the Victory Audit card
-    const articleCard = screen.getByText(/Why Zero-Mock Forensic Victory Audits Are Mandatory for Autonomous Software Labor/i);
+    const articleCard = screen.getByText(/The Victory Audit: How We Stop AI from Faking Tests/i);
     fireEvent.click(articleCard);
 
     // Modal dialog should appear
@@ -131,8 +131,8 @@ describe('Milestone 4 — Blog Hub Test Suite', () => {
     // Check modal contents
     expect(within(modal).getByText(/Key Executive Takeaways/i)).toBeInTheDocument();
     expect(within(modal).getByText(/Table of Contents/i)).toBeInTheDocument();
-    expect(within(modal).getAllByText(/The LLM Shortcut & Cheating Problem/i)[0]).toBeInTheDocument();
-    expect(within(modal).getAllByText(/The Three Pillars of Victory Audit/i)[0]).toBeInTheDocument();
+    expect(within(modal).getAllByText(/The AI Shortcut & Cheating Problem/i)[0]).toBeInTheDocument();
+    expect(within(modal).getAllByText(/The Three Pillars of the Victory Audit/i)[0]).toBeInTheDocument();
 
     // Close modal via close button
     const closeBtn = screen.getByRole('button', { name: /Close modal/i });
@@ -144,7 +144,7 @@ describe('Milestone 4 — Blog Hub Test Suite', () => {
   it('closes modal when pressing Escape key', () => {
     renderBlogPage();
 
-    const articleCard = screen.getByText(/Decentralized Multi-Agent Coordination via Firebase Firestore Stigmergy/i);
+    const articleCard = screen.getByText(/How We Built an Always-On AI Workforce with Sub-Second Response Times/i);
     fireEvent.click(articleCard);
 
     expect(screen.getByRole('dialog')).toBeInTheDocument();

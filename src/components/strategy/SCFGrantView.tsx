@@ -40,7 +40,7 @@ export const SCFGrantView: React.FC = () => {
             </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold font-mono text-slate-100 flex items-center gap-2">
               <Award className="w-6 h-6 text-cyber-emerald" />
-              Soroban Sentinel: Stellar Community Fund ($150,000 Award) Grant Application
+              {grant.projectName} ({grant.requestedAward} Grant)
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 font-sans mt-1 max-w-3xl">
               {grant.summary}

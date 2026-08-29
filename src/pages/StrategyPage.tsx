@@ -57,12 +57,13 @@ export const StrategyPage: React.FC = () => {
 
   const handleCopySummary = async () => {
     const summaryText = `Universal Bounty Swarm Executive Summary:
-- Market TAM: $5.5 Trillion Global Developer Labor Spend
-- Arbitrage: 90%+ Gross Margin ($150-$600/hr senior developer vs $1.50-$10.00 compute)
-- Seed Round: Raising $3.5M on $25M Post-Money Valuation
-- Technical Roadmap: 4-Phase Multi-Tenant Architecture on Cloud Run & GKE
-- Grants: $150,000 XLM Stellar Community Fund Build Award for Soroban Sentinel
-- Victory Audit: Adversarial AST verification guaranteeing zero test manipulation & authentic cryptography.`;
+- Market TAM: $500B+ Global Software Development Labor Market
+- Cost Savings: Up to 90% Payroll Reduction ($150-$600/hr human developer vs $0.02-$5.00 compute)
+- Traction: 195+ Automated Pull Requests Merged across 42 Ecosystem Projects
+- Seed Round: Raising Seed capital to scale computing infrastructure and sales pipeline
+- Technical Roadmap: 4-Phase Practical Scaling (Workforce -> Marketplace -> Expansion -> Enterprise)
+- Stellar Grant: $50,000 in XLM Stellar Community Fund Dedicated AI Workforce
+- Victory Audit: Independent AI auditor guaranteeing genuine code, auth enforcement, and zero mocked tests.`;
     try {
       await navigator.clipboard.writeText(summaryText);
       setCopiedSummary(true);
@@ -75,10 +76,10 @@ export const StrategyPage: React.FC = () => {
 
   const tabs = [
     { id: 'b2b', label: 'B2B Landing Copy', icon: Layers, badge: 'Commercial' },
-    { id: 'pitch', label: 'VC Pitch Deck', icon: TrendingUp, badge: '8 Slides' },
+    { id: 'pitch', label: 'VC Pitch Deck', icon: TrendingUp, badge: '6 Slides' },
     { id: 'roadmap', label: 'Tech Roadmap', icon: Compass, badge: '4 Phases' },
-    { id: 'scf', label: 'Stellar SCF Grant', icon: Award, badge: '$150k XLM' },
-    { id: 'plan', label: 'Business Plan', icon: FileText, badge: 'Triple Model' },
+    { id: 'scf', label: 'Stellar SCF Grant', icon: Award, badge: '$50k XLM' },
+    { id: 'plan', label: 'Business Plan', icon: FileText, badge: 'Dual Model' },
     { id: 'markdown', label: 'Markdown Inspector', icon: FileCode, badge: 'Raw / Docs' },
   ];
 
@@ -94,7 +95,7 @@ export const StrategyPage: React.FC = () => {
           Strategy & <span className="cyber-gradient-text">Operations Hub</span>
         </h1>
         <p className="text-sm sm:text-base text-slate-300 font-sans leading-relaxed">
-          Comprehensive strategic blueprints and technical dossiers powering the Universal Bounty Swarm. Explore our B2B commercial value proposition, $5.5T labor market thesis, 8-slide investor pitch deck, 4-phase technical roadmap, and Stellar SCF $150k build award breakdown.
+          Comprehensive strategic blueprints and technical dossiers powering the Universal Bounty Swarm. Explore our B2B commercial value proposition, $500B+ labor market thesis, 6-slide investor pitch deck, 4-phase technical roadmap, and Stellar SCF $50k build award breakdown.
         </p>
 
         {/* Quick Action Buttons */}
@@ -122,32 +123,32 @@ export const StrategyPage: React.FC = () => {
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 font-mono">
         <div className="p-4 rounded-2xl bg-obsidian-900/90 border border-slate-800 hover:border-cyber-cyan/40 hover:shadow-glow-cyan/10 transition-all">
           <div className="text-[11px] text-slate-400 uppercase tracking-wider">Labor Market TAM</div>
-          <div className="text-2xl sm:text-3xl font-black text-cyber-cyan mt-1">$5.5T</div>
+          <div className="text-2xl sm:text-3xl font-black text-cyber-cyan mt-1">$500B+</div>
           <div className="text-[10px] text-slate-500 font-sans mt-0.5">Global Developer Labor</div>
         </div>
 
         <div className="p-4 rounded-2xl bg-obsidian-900/90 border border-slate-800 hover:border-cyber-volt/40 hover:shadow-glow-volt/10 transition-all">
-          <div className="text-[11px] text-slate-400 uppercase tracking-wider">Gross Margin</div>
+          <div className="text-[11px] text-slate-400 uppercase tracking-wider">Cost Reduction</div>
           <div className="text-2xl sm:text-3xl font-black text-cyber-volt mt-1">90%+</div>
-          <div className="text-[10px] text-slate-500 font-sans mt-0.5">$1.50 Compute vs $300 Dev</div>
+          <div className="text-[10px] text-slate-500 font-sans mt-0.5">$150k Dev vs Subscription</div>
         </div>
 
         <div className="p-4 rounded-2xl bg-obsidian-900/90 border border-slate-800 hover:border-cyber-emerald/40 hover:shadow-glow-emerald/10 transition-all">
           <div className="text-[11px] text-slate-400 uppercase tracking-wider">Stellar SCF Target</div>
-          <div className="text-2xl sm:text-3xl font-black text-cyber-emerald mt-1">$150k</div>
-          <div className="text-[10px] text-slate-500 font-sans mt-0.5">Build Award (3 Tranches)</div>
+          <div className="text-2xl sm:text-3xl font-black text-cyber-emerald mt-1">$50k</div>
+          <div className="text-[10px] text-slate-500 font-sans mt-0.5">Dedicated AI Workforce</div>
         </div>
 
         <div className="p-4 rounded-2xl bg-obsidian-900/90 border border-slate-800 hover:border-cyber-violet/40 hover:shadow-glow-violet/10 transition-all">
           <div className="text-[11px] text-slate-400 uppercase tracking-wider">Technical Roadmap</div>
           <div className="text-2xl sm:text-3xl font-black text-cyber-violet mt-1">4 Phases</div>
-          <div className="text-[10px] text-slate-500 font-sans mt-0.5">Cloud Run to GKE Multi-Tenant</div>
+          <div className="text-[10px] text-slate-500 font-sans mt-0.5">Workforce to Enterprise</div>
         </div>
 
         <div className="p-4 rounded-2xl bg-obsidian-900/90 border border-slate-800 hover:border-cyber-amber/40 transition-all col-span-2 sm:col-span-1">
           <div className="text-[11px] text-slate-400 uppercase tracking-wider">Seed Target Ask</div>
-          <div className="text-2xl sm:text-3xl font-black text-cyber-amber mt-1">$3.5M</div>
-          <div className="text-[10px] text-slate-500 font-sans mt-0.5">On $25M Post-Money Valuation</div>
+          <div className="text-2xl sm:text-3xl font-black text-cyber-amber mt-1">Seed Round</div>
+          <div className="text-[10px] text-slate-500 font-sans mt-0.5">Scaling Compute & Sales</div>
         </div>
       </div>
 
@@ -192,25 +193,25 @@ export const StrategyPage: React.FC = () => {
                 <span>Enterprise Autonomous Workforce</span>
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black font-mono text-slate-100 tracking-tight max-w-4xl">
-                Scale Your Engineering Capacity, <span className="text-cyber-volt">Not Your Payroll.</span>
+                Replace your $150k dev team <span className="text-cyber-volt">for a fraction of the cost.</span>
               </h2>
               <p className="text-sm sm:text-base text-slate-300 font-sans max-w-3xl leading-relaxed">
-                The Universal Bounty Swarm is an autonomous, event-driven multi-agent workforce that integrates directly with your GitHub. We clear technical debt, liquidate stale issue backlogs, and guarantee CI-passing PRs 24/7 without burning senior developer cycles.
+                The Universal Bounty Swarm is a 24/7 AI workforce that writes code, fixes bugs, and ships features faster than humans ever could. You don't need a senior engineer to fix typos, resolve dependency conflicts, or build standard forms. Let our AI do the heavy lifting so your human team can focus on big-picture strategy.
               </p>
 
               {/* 3 Pain Points */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-slate-800">
                 <div className="p-4 rounded-xl bg-obsidian-950 border border-slate-800 font-mono space-y-1">
                   <div className="text-xs font-bold text-cyber-crimson">1. Stale Backlogs</div>
-                  <p className="text-xs text-slate-400 font-sans">Hundreds of P2/P3 tickets aging in Jira or GitHub with zero bandwidth to resolve.</p>
+                  <p className="text-xs text-slate-400 font-sans">Hundreds of routine tickets aging in GitHub or Jira with zero bandwidth to resolve.</p>
                 </div>
                 <div className="p-4 rounded-xl bg-obsidian-950 border border-slate-800 font-mono space-y-1">
-                  <div className="text-xs font-bold text-cyber-amber">2. Review Friction</div>
-                  <p className="text-xs text-slate-400 font-sans">Human code reviews on minor dependency bumps and linting fixes waste thousands of hours.</p>
+                  <div className="text-xs font-bold text-cyber-amber">2. High Payroll Burn</div>
+                  <p className="text-xs text-slate-400 font-sans">Senior engineers ($150k+/yr) wasting 35%+ of high-value time on minor bugs and boilerplate.</p>
                 </div>
                 <div className="p-4 rounded-xl bg-obsidian-950 border border-slate-800 font-mono space-y-1">
-                  <div className="text-xs font-bold text-cyber-violet">3. Expensive Scaling</div>
-                  <p className="text-xs text-slate-400 font-sans">Junior engineering bandwidth is expensive ($100k+/yr), slow to scale, and requires heavy management.</p>
+                  <div className="text-xs font-bold text-cyber-violet">3. Slow Delivery Cycles</div>
+                  <p className="text-xs text-slate-400 font-sans">Waiting weeks for developer availability when routine code should ship in under 30 minutes.</p>
                 </div>
               </div>
             </div>
@@ -224,23 +225,23 @@ export const StrategyPage: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="glass-panel p-6 rounded-2xl border border-slate-800 font-mono space-y-3 relative overflow-hidden">
                   <div className="text-3xl font-black text-cyber-cyan">01</div>
-                  <h4 className="text-base font-bold text-slate-100">Assign an Issue</h4>
+                  <h4 className="text-base font-bold text-slate-100">Connect Your Codebase</h4>
                   <p className="text-xs text-slate-400 font-sans leading-relaxed">
-                    Tag <code className="text-cyber-cyan font-mono bg-obsidian-950 px-1 py-0.5 rounded">@universal-swarm</code> on any GitHub or Jira issue. Our NLP gateway extracts context and dependencies instantly.
+                    Point us to your GitHub organization. Our webhook gateway connects securely in seconds.
                   </p>
                 </div>
                 <div className="glass-panel p-6 rounded-2xl border border-slate-800 font-mono space-y-3 relative overflow-hidden">
                   <div className="text-3xl font-black text-cyber-volt">02</div>
-                  <h4 className="text-base font-bold text-slate-100">Autonomous Execution</h4>
+                  <h4 className="text-base font-bold text-slate-100">Assign a Task</h4>
                   <p className="text-xs text-slate-400 font-sans leading-relaxed">
-                    The Swarm clones your repo into an isolated container, writes code, executes local tests, and self-corrects based on compiler diagnostics.
+                    Tell us what you need in plain English. The AI reads the code, fixes the problem, and runs local tests.
                   </p>
                 </div>
                 <div className="glass-panel p-6 rounded-2xl border border-slate-800 font-mono space-y-3 relative overflow-hidden">
                   <div className="text-3xl font-black text-cyber-emerald">03</div>
-                  <h4 className="text-base font-bold text-slate-100">Verified Delivery</h4>
+                  <h4 className="text-base font-bold text-slate-100">Review the Results</h4>
                   <p className="text-xs text-slate-400 font-sans leading-relaxed">
-                    You receive a fully CI-passing Pull Request within 30 minutes, backed by our AST-level Victory Audit certification.
+                    We deliver fully tested, ready-to-merge code backed by our independent Victory Audit certification.
                   </p>
                 </div>
               </div>
@@ -251,24 +252,24 @@ export const StrategyPage: React.FC = () => {
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-6 h-6 text-cyber-crimson" />
                 <h3 className="text-xl font-bold font-mono text-slate-100">
-                  The Security Moat: Victory Audit Protocol
+                  The Security Guarantee: Independent Victory Audit
                 </h3>
               </div>
               <p className="text-xs sm:text-sm text-slate-300 font-sans leading-relaxed max-w-3xl">
-                Enterprise codebases require absolute trust. Our proprietary Victory Audit protocol acts as an adversarial gatekeeper against AI shortcuts before any PR is submitted.
+                Enterprise codebases require absolute trust. A secondary "Auditor" AI independently tests and guarantees the code actually works before you see it.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-xs pt-2">
                 <div className="p-4 rounded-xl bg-obsidian-950 border border-slate-800 space-y-1">
                   <div className="text-cyber-volt font-bold">Zero Test Manipulation</div>
-                  <p className="text-slate-400 font-sans">AST comparison guarantees agents cannot comment out or loosen failing assertions.</p>
+                  <p className="text-slate-400 font-sans">Guarantees agents cannot comment out, loosen, or bypass failing assertions.</p>
                 </div>
                 <div className="p-4 rounded-xl bg-obsidian-950 border border-slate-800 space-y-1">
                   <div className="text-cyber-cyan font-bold">Authorization Enforced</div>
-                  <p className="text-slate-400 font-sans">State-modifying endpoints must strictly enforce caller validations and require_auth().</p>
+                  <p className="text-slate-400 font-sans">State-modifying endpoints strictly enforce caller validations and require_auth().</p>
                 </div>
                 <div className="p-4 rounded-xl bg-obsidian-950 border border-slate-800 space-y-1">
-                  <div className="text-cyber-emerald font-bold">Cryptographic Purity</div>
-                  <p className="text-slate-400 font-sans">No mocked hashes or fake proofs; strict native host functions (e.g. env.crypto()).</p>
+                  <div className="text-cyber-emerald font-bold">Cryptographic Integrity</div>
+                  <p className="text-slate-400 font-sans">No mocked hashes or fake proofs; strict authentic host functions (e.g. env.crypto()).</p>
                 </div>
               </div>
             </div>
@@ -292,7 +293,7 @@ export const StrategyPage: React.FC = () => {
                     <ul className="space-y-2 text-xs text-slate-300 font-sans pt-3 border-t border-slate-800">
                       <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-cyber-volt flex-shrink-0" /> Up to 3 connected repositories</li>
                       <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-cyber-volt flex-shrink-0" /> 20 Verified PR Credits/mo ($15/additional)</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-cyber-volt flex-shrink-0" /> Standard CI verification gate</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-cyber-volt flex-shrink-0" /> Standard Victory Audit gate</li>
                       <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-cyber-volt flex-shrink-0" /> Community Support</li>
                     </ul>
                   </div>
@@ -317,7 +318,7 @@ export const StrategyPage: React.FC = () => {
                     <ul className="space-y-2 text-xs text-slate-300 font-sans pt-3 border-t border-slate-800">
                       <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-cyber-volt flex-shrink-0" /> Up to 10 connected repositories</li>
                       <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-cyber-volt flex-shrink-0" /> 150 Verified PR Credits/mo</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-cyber-volt flex-shrink-0" /> Victory Audit (Smart Contracts & Invariants)</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-cyber-volt flex-shrink-0" /> Smart Contract Victory Audit</li>
                       <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-cyber-volt flex-shrink-0" /> Native Escrow Settlement (Stellar / Base)</li>
                     </ul>
                   </div>
@@ -334,7 +335,7 @@ export const StrategyPage: React.FC = () => {
                 <div className="glass-panel p-6 rounded-2xl border border-slate-800 font-mono space-y-4 flex flex-col justify-between">
                   <div className="space-y-2">
                     <span className="cyber-badge cyber-badge-violet">ENTERPRISE</span>
-                    <div className="text-2xl font-black text-slate-100 mt-1">Custom ARR <span className="text-xs text-slate-400 font-normal">($4.5k+/mo)</span></div>
+                    <div className="text-2xl font-black text-slate-100 mt-1">Custom Plan <span className="text-xs text-slate-400 font-normal">($4.5k+/mo)</span></div>
                     <p className="text-xs text-slate-400 font-sans">Unlimited scalable workforce with SOC2 compliance & VPC peering.</p>
                     <ul className="space-y-2 text-xs text-slate-300 font-sans pt-3 border-t border-slate-800">
                       <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-cyber-volt flex-shrink-0" /> Unlimited repositories & custom swarms</li>
@@ -365,10 +366,10 @@ export const StrategyPage: React.FC = () => {
                     Risk-Free Enterprise Validation
                   </div>
                   <h3 className="text-2xl font-bold text-slate-100 mt-1">
-                    Book Your $10,000 4-Week Enterprise Pilot
+                    Book Your 4-Week Enterprise Pilot
                   </h3>
                   <p className="text-xs text-slate-400 font-sans mt-1">
-                    Includes up to 3 connected repositories, 25 benchmark issues, and 100% credit applied toward annual contract.
+                    Includes up to 3 connected repositories, benchmark tasks, and 100% credit applied toward annual contract.
                   </p>
                 </div>
                 <div className="px-3 py-1.5 rounded-lg bg-cyber-cyan/10 border border-cyber-cyan/30 text-cyber-cyan text-xs font-mono font-bold self-start sm:self-auto">

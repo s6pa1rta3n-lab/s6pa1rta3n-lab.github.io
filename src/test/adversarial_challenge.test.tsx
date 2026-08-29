@@ -162,33 +162,33 @@ describe('EMPIRICAL CHALLENGER & ADVERSARIAL STRESS TEST SUITE', () => {
   // 3. VCDeckViewer Navigation, Boundary Clamping, and Autoplay Loop
   // =========================================================================
   describe('Vector 3: VCDeckViewer Navigation & Autoplay Lifecycle', () => {
-    it('verifies boundary wrap-around / clamping at Slide 1 and Slide 8', () => {
+    it('verifies boundary wrap-around / clamping at Slide 1 and Slide 6', () => {
       render(<VCDeckViewer />);
 
-      // Starts on Slide 1 of 8
-      expect(screen.getByText(/Slide 1 of 8/i)).toBeInTheDocument();
+      // Starts on Slide 1 of 6
+      expect(screen.getByText(/Slide 1 of 6/i)).toBeInTheDocument();
 
       const prevBtns = screen.getAllByRole('button', { name: /Previous Slide/i });
       const nextBtns = screen.getAllByRole('button', { name: /Next Slide/i });
 
-      // Clicking Previous on Slide 1 wraps to Slide 8 of 8
+      // Clicking Previous on Slide 1 wraps to Slide 6 of 6
       fireEvent.click(prevBtns[0]);
-      expect(screen.getByText(/Slide 8 of 8/i)).toBeInTheDocument();
-      expect(screen.getByText(/8 \/ 8/i)).toBeInTheDocument();
+      expect(screen.getByText(/Slide 6 of 6/i)).toBeInTheDocument();
+      expect(screen.getByText(/6 \/ 6/i)).toBeInTheDocument();
 
-      // Clicking Next on Slide 8 wraps back to Slide 1 of 8
+      // Clicking Next on Slide 6 wraps back to Slide 1 of 6
       fireEvent.click(nextBtns[0]);
-      expect(screen.getByText(/Slide 1 of 8/i)).toBeInTheDocument();
-      expect(screen.getByText(/1 \/ 8/i)).toBeInTheDocument();
+      expect(screen.getByText(/Slide 1 of 6/i)).toBeInTheDocument();
+      expect(screen.getByText(/1 \/ 6/i)).toBeInTheDocument();
     });
 
-    it('allows jumping to all 8 slides directly via selector buttons', () => {
+    it('allows jumping to all 6 slides directly via selector buttons', () => {
       render(<VCDeckViewer />);
 
-      for (let i = 1; i <= 8; i++) {
+      for (let i = 1; i <= 6; i++) {
         const slideBtn = screen.getByRole('button', { name: new RegExp(`SLIDE ${i}`, 'i') });
         fireEvent.click(slideBtn);
-        expect(screen.getByText(new RegExp(`Slide ${i} of 8`, 'i'))).toBeInTheDocument();
+        expect(screen.getByText(new RegExp(`Slide ${i} of 6`, 'i'))).toBeInTheDocument();
       }
     });
 
@@ -196,7 +196,7 @@ describe('EMPIRICAL CHALLENGER & ADVERSARIAL STRESS TEST SUITE', () => {
       vi.useFakeTimers();
 
       render(<VCDeckViewer />);
-      expect(screen.getByText(/Slide 1 of 8/i)).toBeInTheDocument();
+      expect(screen.getByText(/Slide 1 of 6/i)).toBeInTheDocument();
 
       const autoplayBtn = screen.getByRole('button', { name: /Autoplay/i });
       fireEvent.click(autoplayBtn);
@@ -206,19 +206,19 @@ describe('EMPIRICAL CHALLENGER & ADVERSARIAL STRESS TEST SUITE', () => {
       act(() => {
         vi.advanceTimersByTime(6000);
       });
-      expect(screen.getByText(/Slide 2 of 8/i)).toBeInTheDocument();
+      expect(screen.getByText(/Slide 2 of 6/i)).toBeInTheDocument();
 
       // Advance by another 6000ms -> should move to Slide 3
       act(() => {
         vi.advanceTimersByTime(6000);
       });
-      expect(screen.getByText(/Slide 3 of 8/i)).toBeInTheDocument();
+      expect(screen.getByText(/Slide 3 of 6/i)).toBeInTheDocument();
 
       // Advance through all remaining slides until it loops back
       act(() => {
-        vi.advanceTimersByTime(6000 * 6);
+        vi.advanceTimersByTime(6000 * 4);
       });
-      expect(screen.getByText(/Slide 1 of 8/i)).toBeInTheDocument();
+      expect(screen.getByText(/Slide 1 of 6/i)).toBeInTheDocument();
 
       // Turn Autoplay off
       const autoplayOnBtn = screen.getByRole('button', { name: /Autoplay On/i });
@@ -229,7 +229,7 @@ describe('EMPIRICAL CHALLENGER & ADVERSARIAL STRESS TEST SUITE', () => {
       act(() => {
         vi.advanceTimersByTime(12000);
       });
-      expect(screen.getByText(/Slide 1 of 8/i)).toBeInTheDocument();
+      expect(screen.getByText(/Slide 1 of 6/i)).toBeInTheDocument();
 
       vi.useRealTimers();
     });

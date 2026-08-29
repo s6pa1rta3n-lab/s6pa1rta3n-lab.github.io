@@ -17,7 +17,7 @@ describe('Milestone 4 — Grants Funding Hub Test Suite', () => {
 
     expect(screen.getByText(/Multi-Chain Public Goods & Grant Funding/i)).toBeInTheDocument();
     expect(screen.getByText(/Grants &/i)).toBeInTheDocument();
-    expect(screen.getByText(/Settlement Proofs/i)).toBeInTheDocument();
+    expect(screen.getByText(/Ecosystem Funding/i)).toBeInTheDocument();
     expect(screen.getByText(/Cryptographic Payout Routing Proof/i)).toBeInTheDocument();
 
     // Verify all 4 grant programs rendered
@@ -100,23 +100,22 @@ describe('Milestone 4 — Grants Funding Hub Test Suite', () => {
 
     // Verify 3 phases
     expect(screen.getByText(/Phase 1/i)).toBeInTheDocument();
-    expect(screen.getByText(/Core Architecture & CLI Sandbox/i)).toBeInTheDocument();
-    expect(screen.getByText(/\$40,000 XLM/i)).toBeInTheDocument();
+    expect(screen.getByText(/Ecosystem Acceleration & Tooling Integration/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/\$15,000 XLM/i).length).toBe(2);
 
     expect(screen.getByText(/Phase 2/i)).toBeInTheDocument();
-    expect(screen.getByText(/Testnet Alpha & Victory Audit Gatekeeper/i)).toBeInTheDocument();
-    expect(screen.getByText(/\$50,000 XLM/i)).toBeInTheDocument();
+    expect(screen.getByText(/Startup Onboarding & Bounty Hunting/i)).toBeInTheDocument();
 
     expect(screen.getByText(/Phase 3/i)).toBeInTheDocument();
-    expect(screen.getByText(/Mainnet Deployment & Escrow Routing/i)).toBeInTheDocument();
-    expect(screen.getByText(/\$60,000 XLM/i)).toBeInTheDocument();
+    expect(screen.getByText(/Core Infrastructure Maintenance & Mainnet Automation/i)).toBeInTheDocument();
+    expect(screen.getByText(/\$20,000 XLM/i)).toBeInTheDocument();
 
-    // Verify sum of amounts is $150,000
+    // Verify sum of amounts is $50,000
     const totalAmount = scfGrant.tranches.reduce((sum, t) => {
       const num = parseInt(t.amount.replace(/[^0-9]/g, ''), 10);
       return sum + num;
     }, 0);
-    expect(totalAmount).toBe(150000);
+    expect(totalAmount).toBe(50000);
   });
 
   it('renders and allows copying valid tea.yaml in TeaConstitutionViewer', () => {
@@ -143,16 +142,16 @@ describe('Milestone 4 — Grants Funding Hub Test Suite', () => {
     render(<GrantDossierCard grant={scfGrant} />);
 
     // Initially expanded
-    expect(screen.getByText(/Core Architecture & CLI Sandbox/i)).toBeInTheDocument();
+    expect(screen.getByText(/Ecosystem Acceleration & Tooling Integration/i)).toBeInTheDocument();
 
     // Toggle collapse
     const toggleBtn = screen.getByRole('button', { name: /Hide Milestone Tranches/i });
     fireEvent.click(toggleBtn);
 
-    expect(screen.queryByText(/Core Architecture & CLI Sandbox/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Ecosystem Acceleration & Tooling Integration/i)).not.toBeInTheDocument();
 
     // Toggle expand again
     fireEvent.click(screen.getByRole('button', { name: /View Milestone Tranches/i }));
-    expect(screen.getByText(/Core Architecture & CLI Sandbox/i)).toBeInTheDocument();
+    expect(screen.getByText(/Ecosystem Acceleration & Tooling Integration/i)).toBeInTheDocument();
   });
 });

@@ -21,7 +21,7 @@ export const NAV_ITEMS: NavItem[] = [
   {
     name: 'Pitch',
     path: '/pitch',
-    description: 'Devpost Hackathon & Live Simulator',
+    description: '24/7 Autonomous AI Workforce & Simulator',
     icon: 'Flame',
     badge: '40/30/30'
   },
@@ -35,13 +35,13 @@ export const NAV_ITEMS: NavItem[] = [
   {
     name: 'Research Blog',
     path: '/blog',
-    description: 'Autonomous Systems & MEV Harvesters',
+    description: 'Autonomous Systems & Case Studies',
     icon: 'BookOpen',
   },
   {
     name: 'Grants',
     path: '/grants',
-    description: 'Stellar SCF, Octant & Cryptographic Proofs',
+    description: 'Stellar SCF & Verified Settlement Proofs',
     icon: 'Coins',
     badge: 'Verified'
   },
@@ -55,13 +55,13 @@ export const NAV_ITEMS: NavItem[] = [
   {
     name: 'Affiliates',
     path: '/affiliates',
-    description: '4-Tier Revenue Share & Creator Toolkit',
+    description: 'Revenue Share & Creator Toolkit',
     icon: 'Share2',
   },
   {
     name: 'Marketplace',
     path: '/marketplace',
-    description: 'Autonomous Micro-Services & API Schemas',
+    description: 'Autonomous Micro-Services & APIs',
     icon: 'Store',
   }
 ];
@@ -138,7 +138,7 @@ export const Navbar: React.FC = () => {
                 </span>
               </div>
               <span className="text-[10px] font-mono text-slate-400 tracking-tight">
-                Autonomous Multi-Agent Fleet
+                24/7 Autonomous AI Workforce
               </span>
             </div>
           </Link>

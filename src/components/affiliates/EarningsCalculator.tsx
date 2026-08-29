@@ -38,7 +38,7 @@ export const EarningsCalculator: React.FC<EarningsCalculatorProps> = ({ onTierCh
             <DollarSign className="w-5 h-5 text-cyber-volt" />
             <span>Dynamic Earnings Calculator</span>
           </h2>
-          <p className="text-xs text-slate-400 font-sans">Simulate your recurring monthly and annual earnings</p>
+          <p className="text-xs text-slate-400 font-sans">Simulate your recurring monthly and annual earnings when referring engineering teams</p>
         </div>
         <span className={`cyber-badge ${currentTier.badge}`}>
           Current Tier: {currentTier.name} ({currentTier.percent}%)

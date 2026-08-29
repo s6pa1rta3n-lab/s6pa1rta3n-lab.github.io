@@ -188,26 +188,26 @@ describe('Milestone 3 — Hackathon Pitch & Devpost Alignment Test Suite', () =>
     it('renders all 5 architecture layers and allows switching layers', () => {
       render(<ArchitectureNexus />);
 
-      expect(screen.getByRole('button', { name: /Inspect Multi-Model Cognitive Nexus/i })).toBeInTheDocument();
-      expect(screen.getByRole('button', { name: /Inspect Cloud Run Serverless Webhook Gateway/i })).toBeInTheDocument();
-      expect(screen.getByRole('button', { name: /Inspect Reactive Stigmergy & State Engine/i })).toBeInTheDocument();
-      expect(screen.getByRole('button', { name: /Inspect Ephemeral Execution Sandboxes/i })).toBeInTheDocument();
-      expect(screen.getByRole('button', { name: /Inspect Zero-Trust Victory Audit Protocol/i })).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: /Inspect The AI Brain/i })).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: /Inspect Task Gateway/i })).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: /Inspect Shared Memory/i })).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: /Inspect Secure Sandbox/i })).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: /Inspect Quality Auditor/i })).toBeInTheDocument();
 
-      // Click on Cloud Run Gateway layer
-      const gatewayBtn = screen.getByRole('button', { name: /Inspect Cloud Run Serverless Webhook Gateway/i });
+      // Click on Task Gateway layer
+      const gatewayBtn = screen.getByRole('button', { name: /Inspect Task Gateway/i });
       fireEvent.click(gatewayBtn);
 
-      expect(screen.getByRole('heading', { name: /Cloud Run Serverless Webhook Gateway/i })).toBeInTheDocument();
+      expect(screen.getByRole('heading', { name: /Task Gateway \(Cloud Run Listener\)/i })).toBeInTheDocument();
       expect(screen.getByText(/Cloud Run \(Serverless Container Gateway\)/i)).toBeInTheDocument();
       expect(screen.getByText(/HMAC-SHA256 signature verification/i)).toBeInTheDocument();
 
-      // Click on Victory Audit layer
-      const auditBtn = screen.getByRole('button', { name: /Inspect Zero-Trust Victory Audit Protocol/i });
+      // Click on Quality Auditor layer
+      const auditBtn = screen.getByRole('button', { name: /Inspect Quality Auditor/i });
       fireEvent.click(auditBtn);
 
-      expect(screen.getByRole('heading', { name: /Zero-Trust Victory Audit Protocol/i })).toBeInTheDocument();
-      expect(screen.getByText(/The Adversarial Murder Board/i)).toBeInTheDocument();
+      expect(screen.getByRole('heading', { name: /Quality Auditor \(Independent Verification AI\)/i })).toBeInTheDocument();
+      expect(screen.getByText(/The Victory Auditor/i)).toBeInTheDocument();
       expect(screen.getByText(/Strict anti-mock AST parser/i)).toBeInTheDocument();
     });
 
@@ -267,12 +267,12 @@ describe('Milestone 3 — Hackathon Pitch & Devpost Alignment Test Suite', () =>
       // Hero
       expect(screen.getAllByText(/Universal/i)[0]).toBeInTheDocument();
       expect(screen.getAllByText(/Bounty Swarm/i)[0]).toBeInTheDocument();
-      expect(screen.getByText(/All Things Agentic Hackathon Entry/i)).toBeInTheDocument();
-      expect(screen.getByText(/Autonomous Software Labor Force on Google Cloud/i)).toBeInTheDocument();
+      expect(screen.getByText(/24\/7 Autonomous AI Workforce • Production Proven/i)).toBeInTheDocument();
+      expect(screen.getByText(/Replace Your \$150k Dev Team/i)).toBeInTheDocument();
 
       // Value proposition
-      expect(screen.getAllByText(/Outcome-Based Labor Arbitrage/i)[0]).toBeInTheDocument();
-      expect(screen.getByText(/90%\+ Cost Arbitrage/i)).toBeInTheDocument();
+      expect(screen.getByText(/Stop Burning Cash on Routine Engineering/i)).toBeInTheDocument();
+      expect(screen.getByText(/90%\+ Cost Savings/i)).toBeInTheDocument();
 
       // Integrated sub-components
       expect(screen.getByRole('heading', { name: /Core Judging Criteria/i })).toBeInTheDocument();

@@ -45,19 +45,19 @@ export const BusinessPlanView: React.FC = () => {
             </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold font-mono text-slate-100 flex items-center gap-2">
               <FileText className="w-6 h-6 text-cyber-amber" />
-              Strategic Business Plan & Monetization Architecture
+              Strategic Business Plan & Dual Monetization Engine
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 font-sans mt-1 max-w-3xl">
-              Universal Bounty Swarm bridges the gap between software tool pricing ($20/mo) and human developer labor ($150-$600/hr) through automated outcome-settled issue liquidation.
+              The Universal Bounty Swarm replaces a $150k developer team with a low-cost subscription, combining B2B SaaS revenue for startups with 24/7 autonomous open-source bounty hunting.
             </p>
           </div>
 
           <div className="p-4 rounded-xl bg-obsidian-950 border border-cyber-amber/40 text-right font-mono flex-shrink-0">
-            <div className="text-xs text-slate-400">Outcome Arbitrage Margin</div>
+            <div className="text-xs text-slate-400">Payroll Cost Reduction</div>
             <div className="text-2xl sm:text-3xl font-black text-cyber-amber mt-0.5">
-              90% - 94%
+              90%+ Savings
             </div>
-            <div className="text-[11px] text-slate-500 mt-1">$1.50 Compute vs $300 Labor</div>
+            <div className="text-[11px] text-slate-500 mt-1">$0.02 Compute vs $300 Labor</div>
           </div>
         </div>
 

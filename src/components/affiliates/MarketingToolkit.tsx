@@ -40,7 +40,7 @@ export const MarketingToolkit: React.FC = () => {
             <span>Creator Marketing Toolkit</span>
           </h3>
           <p className="text-xs text-slate-400 font-sans">
-            Ready-to-use pitch templates, social media copy, and embeddable README badges
+            Ready-to-use pitch templates, social media copy, and embeddable README badges highlighting 90% cost savings
           </p>
         </div>
 

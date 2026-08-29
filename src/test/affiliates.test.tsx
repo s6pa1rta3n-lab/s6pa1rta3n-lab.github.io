@@ -13,9 +13,8 @@ describe('Milestone 4 — Affiliates & Creator Hub Test Suite', () => {
   it('renders AffiliatesPage header, calculator, tier matrix, toolkit, and FAQs', () => {
     render(<AffiliatesPage />);
 
-    expect(screen.getByText(/Creator & Partner Revenue-Share Program/i)).toBeInTheDocument();
-    expect(screen.getByText(/Affiliate &/i)).toBeInTheDocument();
-    expect(screen.getByText(/Creator Program/i)).toBeInTheDocument();
+    expect(screen.getByText(/Partner & Affiliate Program/i)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Partner & Affiliate Program/i })).toBeInTheDocument();
     expect(screen.getByText(/Dynamic Earnings Calculator/i)).toBeInTheDocument();
     expect(screen.getByText(/4-Tier Commission Matrix/i)).toBeInTheDocument();
     expect(screen.getByText(/Creator Marketing Toolkit/i)).toBeInTheDocument();

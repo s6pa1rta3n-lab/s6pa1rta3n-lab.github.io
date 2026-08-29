@@ -360,7 +360,7 @@ describe('ADVERSARIAL STRESS TEST & EDGE-CASE SUITE — PortfolioPage', () => {
 
       // Verify page renders completely without crashing
       expect(screen.getByText('ADG-VITV/RepoRaid')).toBeInTheDocument();
-      expect(screen.getByRole('heading', { name: /Proof of Work & Ecosystem Contributions/i })).toBeInTheDocument();
+      expect(screen.getByRole('heading', { name: /Verified Track Record & Proof of Work/i })).toBeInTheDocument();
     });
   });
 

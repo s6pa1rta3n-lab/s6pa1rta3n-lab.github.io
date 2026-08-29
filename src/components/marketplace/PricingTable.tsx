@@ -21,7 +21,7 @@ export const PricingTable: React.FC<PricingTableProps> = ({
           Tiered <span className="cyber-gradient-text">Pricing Matrix</span>
         </h2>
         <p className="text-xs sm:text-sm text-slate-400 font-sans">
-          Simple, predictable pricing for teams of all sizes. Scale autonomous engineering capacity with zero hidden compute surcharges.
+          Simple, predictable pricing for teams of all sizes. Scale autonomous engineering capacity and slash maintenance costs by up to 90% with zero hidden compute surcharges.
         </p>
 
         {/* Switcher */}

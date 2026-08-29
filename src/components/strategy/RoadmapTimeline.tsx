@@ -40,19 +40,19 @@ export const RoadmapTimeline: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 mb-1">
               <span className="cyber-badge cyber-badge-violet">ENGINEERING BLUEPRINT</span>
-              <span className="text-xs font-mono text-slate-400">Horizon: 4-Month Multi-Tenant Transition</span>
+              <span className="text-xs font-mono text-slate-400">Horizon: 4 Practical Scaling Phases</span>
             </div>
             <h2 className="text-xl sm:text-2xl font-bold font-mono text-slate-100 flex items-center gap-2">
               <Compass className="w-5 h-5 text-cyber-violet" />
-              Technical Roadmap: Multi-Tenant B2B SaaS Platform
+              Technical Roadmap: Autonomous Swarm Scaling
             </h2>
           </div>
           <div className="text-xs font-mono text-slate-400 bg-obsidian-950 p-2.5 rounded-xl border border-slate-800">
-            Current Architecture: <span className="text-cyber-volt font-bold">Firebase V2 + Cloud Run</span>
+            Current Architecture: <span className="text-cyber-volt font-bold">Google Cloud Run + Firestore</span>
           </div>
         </div>
         <p className="text-xs sm:text-sm text-slate-300 font-sans leading-relaxed max-w-4xl">
-          Upgrading the internal Universal Bounty Swarm from single-tenant local execution into an enterprise-grade multi-tenant B2B SaaS platform featuring reactive GitHub Webhook ingestion, isolated Kubernetes execution, and outcome-based fiat/crypto escrow settlement.
+          Scaling the Universal Bounty Swarm from proven autonomous execution (195+ PRs across 42 projects) into a self-serve marketplace, autonomous self-funding bounty engine, and full enterprise IT automation fleet.
         </p>
 
         {/* 4-Phase Progress Step Bar */}

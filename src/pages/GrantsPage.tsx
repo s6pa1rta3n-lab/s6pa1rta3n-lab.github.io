@@ -27,10 +27,10 @@ export const GrantsPage: React.FC = () => {
           <span>Multi-Chain Public Goods & Grant Funding</span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-100 tracking-tight">
-          Grants & <span className="cyber-gradient-text">Settlement Proofs</span>
+          Grants & <span className="cyber-gradient-text">Ecosystem Funding</span>
         </h1>
         <p className="text-sm text-slate-400 font-sans leading-relaxed">
-          Universal Bounty Swarm qualifies for and executes grant milestones across leading Web3 public goods ecosystems with zero manual overhead and guaranteed cryptographic payout verification.
+          How Universal Bounty Swarm delivers high-velocity public goods maintenance and automated milestone fulfillment across leading Web3 networks.
         </p>
       </div>
 

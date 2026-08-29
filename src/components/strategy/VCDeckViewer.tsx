@@ -77,7 +77,7 @@ export const VCDeckViewer: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 mb-1">
               <span className="cyber-badge cyber-badge-volt">INVESTOR DOSSIER</span>
-              <span className="text-xs font-mono text-slate-400">Ask: $3.5M Seed @ $22M Cap ($25M Post-Money Valuation)</span>
+              <span className="text-xs font-mono text-slate-400">Ask: Seed Round to scale computing infrastructure and sales pipeline</span>
             </div>
             <h2 className="text-xl sm:text-2xl font-bold font-mono text-slate-100 flex items-center gap-2">
               <TrendingUp className="w-5 h-5 text-cyber-volt" />
@@ -133,7 +133,7 @@ export const VCDeckViewer: React.FC = () => {
         </div>
 
         {/* Slide Selector Buttons */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2 pt-1">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 pt-1">
           {PITCH_DECK_SLIDES.map((slide, idx) => (
             <button
               key={slide.id}
@@ -234,19 +234,19 @@ export const VCDeckViewer: React.FC = () => {
           </div>
 
           {/* Slide Visual / Custom Presentation Card */}
-          {currentSlide.slideNumber === 2 && (
+          {currentSlide.slideNumber === 3 && (
             <div className="p-4 rounded-xl bg-obsidian-950 border border-slate-800 space-y-3 font-mono">
               <div className="flex items-center justify-between text-xs text-slate-400">
                 <span className="flex items-center gap-1.5 text-cyber-volt font-bold">
-                  <PieChart className="w-4 h-4" /> Market Spend Divergence (TAM)
+                  <PieChart className="w-4 h-4" /> Market Opportunity Breakdown (TAM)
                 </span>
                 <span>Labor Arbitrage Vector</span>
               </div>
               <div className="space-y-2">
                 <div>
                   <div className="flex justify-between text-xs mb-1">
-                    <span className="text-slate-300 font-bold">Global IT/Developer Labor Spend (Swarm Target)</span>
-                    <span className="text-cyber-volt font-black">$5.5 Trillion</span>
+                    <span className="text-slate-300 font-bold">Global Software Developer Labor (Swarm Target)</span>
+                    <span className="text-cyber-volt font-black">$500B+</span>
                   </div>
                   <div className="w-full bg-slate-900 h-3 rounded-full overflow-hidden">
                     <div className="bg-cyber-volt h-full rounded-full" style={{ width: '100%' }} />
@@ -254,37 +254,37 @@ export const VCDeckViewer: React.FC = () => {
                 </div>
                 <div>
                   <div className="flex justify-between text-xs mb-1">
-                    <span className="text-slate-400">Developer Tool & IDE SaaS Spend (Copilots)</span>
-                    <span className="text-slate-300 font-bold">$1.3 Trillion</span>
+                    <span className="text-slate-400">Developer Tool & IDE Plugin SaaS Spend (Copilots)</span>
+                    <span className="text-slate-300 font-bold">$125B</span>
                   </div>
                   <div className="w-full bg-slate-900 h-3 rounded-full overflow-hidden">
-                    <div className="bg-slate-700 h-full rounded-full" style={{ width: '23.6%' }} />
+                    <div className="bg-slate-700 h-full rounded-full" style={{ width: '25%' }} />
                   </div>
                 </div>
               </div>
             </div>
           )}
 
-          {currentSlide.slideNumber === 7 && (
+          {currentSlide.slideNumber === 6 && (
             <div className="p-4 rounded-xl bg-obsidian-950 border border-slate-800 space-y-3 font-mono">
               <div className="text-xs text-slate-400 flex items-center gap-1.5 font-bold text-cyber-volt">
-                <BarChart3 className="w-4 h-4" /> Use of Funds Allocation ($3,500,000 Total)
+                <BarChart3 className="w-4 h-4" /> Seed Capital Allocation & Milestones
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
                 <div className="p-3 rounded-lg bg-obsidian-900 border border-cyber-volt/40">
-                  <div className="text-cyber-volt font-bold text-base">60% ($2.10M)</div>
+                  <div className="text-cyber-volt font-bold text-base">60% Allocation</div>
                   <div className="text-slate-200 font-medium">Cloud Runner Infrastructure</div>
-                  <div className="text-[11px] text-slate-400 mt-1">1,000+ concurrent isolated containers</div>
+                  <div className="text-[11px] text-slate-400 mt-1">Scale container sandboxes & compute</div>
                 </div>
                 <div className="p-3 rounded-lg bg-obsidian-900 border border-cyber-cyan/40">
-                  <div className="text-cyber-cyan font-bold text-base">30% ($1.05M)</div>
+                  <div className="text-cyber-cyan font-bold text-base">30% Allocation</div>
                   <div className="text-slate-200 font-medium">Core AI Ops & Engineering</div>
-                  <div className="text-[11px] text-slate-400 mt-1">Fine-tuned models & Victory Audit AST</div>
+                  <div className="text-[11px] text-slate-400 mt-1">Multi-agent models & Victory Audit</div>
                 </div>
                 <div className="p-3 rounded-lg bg-obsidian-900 border border-cyber-violet/40">
-                  <div className="text-cyber-violet font-bold text-base">10% ($350k)</div>
-                  <div className="text-slate-200 font-medium">B2B Sales & GTM</div>
-                  <div className="text-[11px] text-slate-400 mt-1">Enterprise pilots & DevRel pipeline</div>
+                  <div className="text-cyber-violet font-bold text-base">10% Allocation</div>
+                  <div className="text-slate-200 font-medium">Sales Pipeline & GTM</div>
+                  <div className="text-[11px] text-slate-400 mt-1">Onboard 50+ startup marketplace customers</div>
                 </div>
               </div>
             </div>

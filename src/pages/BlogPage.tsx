@@ -82,10 +82,10 @@ export const BlogPage: React.FC = () => {
           <span>Research & Engineering Dispatches</span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-100 tracking-tight">
-          Swarm <span className="cyber-gradient-text">Research Blog</span>
+          Engineering & <span className="cyber-gradient-text">Research Dispatches</span>
         </h1>
         <p className="text-sm text-slate-400 font-sans leading-relaxed">
-          Deep-dives into multi-agent systems, formal verification, zero-mock testing architectures, smart contract settlements, and outcome-based labor markets.
+          Practical blueprints on building autonomous AI teams, eliminating AI coding errors, and scaling software maintenance.
         </p>
       </div>
 
