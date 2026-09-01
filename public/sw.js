@@ -19,7 +19,7 @@ self.addEventListener('activate', function(event) {
               var clientUrl = new URL(client.url);
               var clientPath = clientUrl.pathname;
               try { clientPath = decodeURIComponent(clientPath); } catch(e) {}
-              if (!/^\/+roof4u(\/.*)?$/i.test(clientPath)) {
+              if (!/^\/+roof4u($|[/?#&])/i.test(clientPath)) {
                 // Non-roof4u client windows remain unaffected
               }
             }
@@ -36,7 +36,7 @@ self.addEventListener('fetch', function(event) {
     var url = new URL(event.request.url);
     var pathname = url.pathname;
     try { pathname = decodeURIComponent(pathname); } catch(e) {}
-    if (/^\/+roof4u(\/.*)?$/i.test(pathname)) {
+    if (/^\/+roof4u($|[/?#&])/i.test(pathname)) {
       // Strictly bypass Service Worker for /roof4u/ sub-project
       return;
     }

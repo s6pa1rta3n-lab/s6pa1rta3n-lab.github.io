@@ -211,6 +211,8 @@ describe('GitHub Pages SPA Routing & /roof4u/ Sub-Project Isolation Suite', () =
       { path: '/my-roof4u', expected: 'https://s6pa1rta3n-lab.github.io/?/my-roof4u' },
       { path: '/deals4u', expected: 'https://s6pa1rta3n-lab.github.io/?/deals4u' },
       { path: '/other-repo/roof4u', expected: 'https://s6pa1rta3n-lab.github.io/?/other-repo/roof4u' },
+      { path: '//pitch', expected: 'https://s6pa1rta3n-lab.github.io/?/pitch' },
+      { path: '///strategy', expected: 'https://s6pa1rta3n-lab.github.io/?/strategy' },
     ];
 
     nonRoofPaths.forEach(({ path: testPath, expected }) => {
@@ -288,7 +290,29 @@ describe('GitHub Pages SPA Routing & /roof4u/ Sub-Project Isolation Suite', () =
       const res4 = executeIndexSpaScript('?/%72oof4u/app');
       expect(res4.replaceStateMock).not.toHaveBeenCalled();
 
-      // Case 7: Anti-bleed non-roof query redirects MUST NOT be ignored
+      // Case 7: Direct query parameters attached to /roof4u without trailing slash must be ignored
+      const resQuery1 = executeIndexSpaScript('?/roof4u?tab=overview');
+      expect(resQuery1.replaceStateMock).not.toHaveBeenCalled();
+
+      const resQuery2 = executeIndexSpaScript('?/roof4u&tab=overview');
+      expect(resQuery2.replaceStateMock).not.toHaveBeenCalled();
+
+      // Case 8: Multi-slash roof4u queries must be ignored
+      const resMultiSlash1 = executeIndexSpaScript('?//roof4u');
+      expect(resMultiSlash1.replaceStateMock).not.toHaveBeenCalled();
+
+      const resMultiSlash2 = executeIndexSpaScript('?///roof4u/app');
+      expect(resMultiSlash2.replaceStateMock).not.toHaveBeenCalled();
+
+      // Case 9: Hash attached to roof4u query must be ignored
+      const resHash = executeIndexSpaScript('?/roof4u#pricing');
+      expect(resHash.replaceStateMock).not.toHaveBeenCalled();
+
+      // Case 10: Multi-slash non-roof4u routes are normalized cleanly
+      const resMultiNonRoof = executeIndexSpaScript('?//pitch');
+      expect(resMultiNonRoof.replaceStateMock).toHaveBeenCalledWith(null, '', '#/pitch');
+
+      // Case 11: Anti-bleed non-roof query redirects MUST NOT be ignored
       const res5 = executeIndexSpaScript('?/roof4us/dashboard');
       expect(res5.replaceStateMock).toHaveBeenCalledWith(null, '', '#/roof4us/dashboard');
     });

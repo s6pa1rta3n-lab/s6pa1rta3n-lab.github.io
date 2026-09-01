@@ -31,8 +31,8 @@
             decoded = decodeURIComponent(decoded);
           } catch(e) {}
           // Strict isolation: explicitly ignore /roof4u/ sub-project paths
-          if (!/^\/?roof4u(\/.*)?$/i.test(decoded)) {
-            var targetHash = '#/' + decoded.replace(/^\//, '');
+          if (!/^\/*roof4u($|[/?#&])/i.test(decoded)) {
+            var targetHash = '#/' + decoded.replace(/^\/+/, '');
             var basePath = l.pathname.replace(/\/index\.html$/, '').replace(/\/+$/, '');
             window.history.replaceState(null, '', basePath + targetHash + l.hash);
           }

@@ -16,8 +16,8 @@
           pathname = decodeURIComponent(l.pathname);
         } catch (e) {}
         
-        // Strict isolation regex: matches /roof4u or /roof4u/* or //roof4u (case-insensitive)
-        var isRoof4uBypass = /^\/+roof4u(\/.*)?$/i.test(pathname);
+        // Strict isolation regex: matches /roof4u or /roof4u/* or //roof4u or with query/hash (case-insensitive)
+        var isRoof4uBypass = /^\/+roof4u($|[/?#&])/i.test(pathname);
         
         if (isRoof4uBypass) {
           // Do NOT redirect /roof4u/ paths to root SPA.
@@ -28,7 +28,7 @@
 
         // Swarm Hub SPA Redirection Logic
         var pathSegmentsToKeep = 0;
-        var newPath = l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/');
+        var newPath = l.pathname.replace(/^\/+/, '').split('/').slice(pathSegmentsToKeep).join('/');
         var redirectUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
           (pathSegmentsToKeep > 0 ? '/' + l.pathname.slice(1).split('/').slice(0, pathSegmentsToKeep).join('/') : '') +
           '/?/' + newPath.replace(/&/g, '~and~') +
@@ -159,7 +159,7 @@
         try {
           pathname = decodeURIComponent(window.location.pathname);
         } catch (e) {}
-        if (/^\/+roof4u(\/.*)?$/i.test(pathname)) {
+        if (/^\/+roof4u($|[/?#&])/i.test(pathname)) {
           var badge = document.getElementById('status-badge');
           if (badge) {
             badge.textContent = 'Sub-Project Isolated';
