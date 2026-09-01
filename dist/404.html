@@ -1,26 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Universal Bounty Swarm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Bounty Swarm | 404 Fallback</title>
     <script type="text/javascript">
-      // GitHub Pages SPA redirect script for HashRouter
-      // Redirects non-root URLs to index.html with appropriate hash fragment
-      var pathSegmentsToKeep = 0;
-      var l = window.location;
-      var newPath = l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/');
-      var redirectUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        (pathSegmentsToKeep > 0 ? '/' + l.pathname.slice(1).split('/').slice(0, pathSegmentsToKeep).join('/') : '') +
-        '/?/' + newPath.replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash;
-      window.location.replace(redirectUrl);
+      // GitHub Pages SPA redirect script with strict sub-project isolation.
+      // Redirects non-root Swarm Hub routes to index.html with query/hash routing.
+      // Explicitly BYPASSES /roof4u/ and sub-paths to prevent cross-project route hijacking.
+      
+      (function() {
+        var l = window.location;
+        var pathname = l.pathname;
+        
+        // Strict isolation regex: matches /roof4u or /roof4u/* (case-insensitive)
+        var isRoof4uBypass = /^\/roof4u(\/.*)?$/i.test(pathname);
+        
+        if (isRoof4uBypass) {
+          // Do NOT redirect /roof4u/ paths to root SPA.
+          // Allow sub-project 404 handling or direct asset resolution.
+          window.__ROOF4U_BYPASS__ = true;
+          return;
+        }
+
+        // Swarm Hub SPA Redirection Logic
+        var pathSegmentsToKeep = 0;
+        var newPath = l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/');
+        var redirectUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          (pathSegmentsToKeep > 0 ? '/' + l.pathname.slice(1).split('/').slice(0, pathSegmentsToKeep).join('/') : '') +
+          '/?/' + newPath.replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash;
+        
+        window.location.replace(redirectUrl);
+      })();
     </script>
+    <style>
+      body {
+        background-color: #020408;
+        color: #f8fafc;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, monospace;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+      .card {
+        background: rgba(15, 23, 42, 0.8);
+        border: 1px solid rgba(0, 240, 255, 0.2);
+        border-radius: 1rem;
+        padding: 2rem;
+        max-width: 32rem;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+      }
+      .badge {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.75rem;
+        font-family: monospace;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        background: rgba(255, 0, 60, 0.15);
+        color: #ff003c;
+        border: 1px solid rgba(255, 0, 60, 0.3);
+      }
+      h1 {
+        font-size: 1.75rem;
+        font-weight: 800;
+        margin: 0 0 0.75rem 0;
+        color: #00f0ff;
+        font-family: monospace;
+      }
+      p {
+        color: #94a3b8;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        margin: 0 0 1.5rem 0;
+      }
+      .actions {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      @media (min-width: 640px) {
+        .actions {
+          flex-direction: row;
+          justify-content: center;
+        }
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.625rem 1.25rem;
+        border-radius: 0.5rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        font-family: monospace;
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
+      .btn-primary {
+        background: #d4ff00;
+        color: #020408;
+      }
+      .btn-primary:hover {
+        background: #bbf000;
+        box-shadow: 0 0 15px rgba(212, 255, 0, 0.4);
+      }
+      .btn-secondary {
+        background: #1e293b;
+        color: #e2e8f0;
+        border: 1px solid #334155;
+      }
+      .btn-secondary:hover {
+        background: #334155;
+        color: #ffffff;
+      }
+      .path-display {
+        background: #020408;
+        border: 1px solid #1e293b;
+        border-radius: 0.375rem;
+        padding: 0.5rem;
+        font-family: monospace;
+        font-size: 0.8125rem;
+        color: #d4ff00;
+        margin-bottom: 1.25rem;
+        word-break: break-all;
+      }
+    </style>
   </head>
-  <body style="background-color: #020408; color: #00F0FF; font-family: monospace; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0;">
-    <div style="text-align: center;">
-      <h1 style="font-size: 2rem; margin-bottom: 1rem;">Redirecting to Swarm Hub...</h1>
-      <p style="color: #94a3b8;">If you are not redirected automatically, <a href="./" style="color: #D4FF00;">click here</a>.</p>
+  <body>
+    <div class="card">
+      <div id="status-badge" class="badge">Routing Notice</div>
+      <h1 id="title">Redirecting to Swarm Hub...</h1>
+      <div id="path-container" class="path-display" style="display: none;"></div>
+      <p id="desc">If you are not redirected automatically within a few seconds, please choose a destination below.</p>
+      <div class="actions">
+        <a id="btn-home" href="./" class="btn btn-primary">Return to Swarm Hub</a>
+        <a id="btn-roof" href="/roof4u/" class="btn btn-secondary" style="display: none;">Open /roof4u/ Project</a>
+      </div>
     </div>
+    <script type="text/javascript">
+      // Dynamic fallback rendering for bypassed sub-projects
+      (function() {
+        var pathname = window.location.pathname;
+        if (/^\/roof4u(\/.*)?$/i.test(pathname)) {
+          var badge = document.getElementById('status-badge');
+          if (badge) {
+            badge.textContent = 'Sub-Project Isolated';
+            badge.style.color = '#d4ff00';
+            badge.style.borderColor = 'rgba(212, 255, 0, 0.3)';
+            badge.style.background = 'rgba(212, 255, 0, 0.15)';
+          }
+          var title = document.getElementById('title');
+          if (title) title.textContent = 'Sub-Project: /roof4u/';
+          var pathContainer = document.getElementById('path-container');
+          if (pathContainer) {
+            pathContainer.textContent = pathname;
+            pathContainer.style.display = 'block';
+          }
+          var desc = document.getElementById('desc');
+          if (desc) {
+            desc.textContent = 'The requested resource in the /roof4u/ sub-project was not found. SPA fallback redirection has been bypassed to preserve sub-project route isolation.';
+          }
+          var btnRoof = document.getElementById('btn-roof');
+          if (btnRoof) btnRoof.style.display = 'inline-flex';
+        }
+      })();
+    </script>
   </body>
 </html>

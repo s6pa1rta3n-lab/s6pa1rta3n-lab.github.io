@@ -19,6 +19,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- GitHub Pages Single Page Apps query-to-hash redirect handler with strict /roof4u/ isolation -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search && l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&');
+          }).join('?');
+          // Strict isolation: explicitly ignore /roof4u/ sub-project paths
+          if (!/^\/?roof4u(\/.*)?$/i.test(decoded)) {
+            var targetHash = '#/' + decoded.replace(/^\//, '');
+            window.history.replaceState(null, '', l.pathname.slice(0, -1) + targetHash + l.hash);
+          }
+        }
+      }(window.location));
+    </script>
+
+    <!-- Clean up stale/aggressive Service Workers to guarantee zero /roof4u/ interception -->
+    <script type="text/javascript">
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for (var i = 0; i < registrations.length; i++) {
+            registrations[i].unregister();
+          }
+        }).catch(function() {});
+      }
+    </script>
     <script type="module" crossorigin src="./assets/index-iGewdgy2.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/vendor-DQTcrdnM.js">
     <link rel="modulepreload" crossorigin href="./assets/icons-BeL1XAno.js">
