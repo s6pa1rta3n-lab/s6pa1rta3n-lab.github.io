@@ -27,16 +27,20 @@
           var decoded = l.search.slice(1).split('&').map(function(s) { 
             return s.replace(/~and~/g, '&');
           }).join('?');
+          try {
+            decoded = decodeURIComponent(decoded);
+          } catch(e) {}
           // Strict isolation: explicitly ignore /roof4u/ sub-project paths
           if (!/^\/?roof4u(\/.*)?$/i.test(decoded)) {
             var targetHash = '#/' + decoded.replace(/^\//, '');
-            window.history.replaceState(null, '', l.pathname.slice(0, -1) + targetHash + l.hash);
+            var basePath = l.pathname.replace(/\/index\.html$/, '').replace(/\/+$/, '');
+            window.history.replaceState(null, '', basePath + targetHash + l.hash);
           }
         }
       }(window.location));
     </script>
 
-    <!-- Clean up stale/aggressive Service Workers to guarantee zero /roof4u/ interception -->
+    <!-- Clean up stale/aggressive Service Workers and CacheStorage to guarantee zero /roof4u/ interception -->
     <script type="text/javascript">
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.getRegistrations().then(function(registrations) {
@@ -45,11 +49,18 @@
           }
         }).catch(function() {});
       }
+      if ('caches' in window) {
+        caches.keys().then(function(keys) {
+          for (var i = 0; i < keys.length; i++) {
+            caches.delete(keys[i]);
+          }
+        }).catch(function() {});
+      }
     </script>
-    <script type="module" crossorigin src="./assets/index-iGewdgy2.js"></script>
+    <script type="module" crossorigin src="./assets/index-CCo2oZip.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/vendor-DQTcrdnM.js">
     <link rel="modulepreload" crossorigin href="./assets/icons-BeL1XAno.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-Dfaz5Jfw.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-B-c-8qm_.css">
   </head>
   <body class="bg-obsidian-950 text-slate-100 font-sans antialiased selection:bg-cyber-cyan/30 selection:text-cyber-cyan min-h-screen overflow-x-hidden">
     <div id="root"></div>

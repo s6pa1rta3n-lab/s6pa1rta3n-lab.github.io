@@ -27,21 +27,32 @@
           var decoded = l.search.slice(1).split('&').map(function(s) { 
             return s.replace(/~and~/g, '&');
           }).join('?');
+          try {
+            decoded = decodeURIComponent(decoded);
+          } catch(e) {}
           // Strict isolation: explicitly ignore /roof4u/ sub-project paths
           if (!/^\/?roof4u(\/.*)?$/i.test(decoded)) {
             var targetHash = '#/' + decoded.replace(/^\//, '');
-            window.history.replaceState(null, '', l.pathname.slice(0, -1) + targetHash + l.hash);
+            var basePath = l.pathname.replace(/\/index\.html$/, '').replace(/\/+$/, '');
+            window.history.replaceState(null, '', basePath + targetHash + l.hash);
           }
         }
       }(window.location));
     </script>
 
-    <!-- Clean up stale/aggressive Service Workers to guarantee zero /roof4u/ interception -->
+    <!-- Clean up stale/aggressive Service Workers and CacheStorage to guarantee zero /roof4u/ interception -->
     <script type="text/javascript">
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.getRegistrations().then(function(registrations) {
           for (var i = 0; i < registrations.length; i++) {
             registrations[i].unregister();
+          }
+        }).catch(function() {});
+      }
+      if ('caches' in window) {
+        caches.keys().then(function(keys) {
+          for (var i = 0; i < keys.length; i++) {
+            caches.delete(keys[i]);
           }
         }).catch(function() {});
       }

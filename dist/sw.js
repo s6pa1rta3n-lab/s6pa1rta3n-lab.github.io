@@ -7,23 +7,38 @@ self.addEventListener('install', function(event) {
 
 self.addEventListener('activate', function(event) {
   event.waitUntil(
-    self.registration.unregister().then(function() {
-      return self.clients.matchAll();
-    }).then(function(clients) {
-      clients.forEach(function(client) {
-        if (client.url && !client.url.includes('/roof4u/')) {
-          client.navigate(client.url);
-        }
-      });
-    })
+    Promise.all([
+      self.registration.unregister(),
+      'caches' in self ? caches.keys().then(function(names) {
+        return Promise.all(names.map(function(name) { return caches.delete(name); }));
+      }) : Promise.resolve(),
+      self.clients.matchAll({ type: 'window' }).then(function(clients) {
+        clients.forEach(function(client) {
+          try {
+            if (client.url) {
+              var clientUrl = new URL(client.url);
+              var clientPath = clientUrl.pathname;
+              try { clientPath = decodeURIComponent(clientPath); } catch(e) {}
+              if (!/^\/+roof4u(\/.*)?$/i.test(clientPath)) {
+                // Non-roof4u client windows remain unaffected
+              }
+            }
+          } catch(e) {}
+        });
+      })
+    ])
   );
 });
 
 // Explicit bypass for /roof4u/ in case fetch is ever intercepted
 self.addEventListener('fetch', function(event) {
-  var url = new URL(event.request.url);
-  if (url.pathname.startsWith('/roof4u') || /^\/roof4u(\/.*)?$/i.test(url.pathname)) {
-    // Strictly bypass Service Worker for /roof4u/ sub-project
-    return;
-  }
+  try {
+    var url = new URL(event.request.url);
+    var pathname = url.pathname;
+    try { pathname = decodeURIComponent(pathname); } catch(e) {}
+    if (/^\/+roof4u(\/.*)?$/i.test(pathname)) {
+      // Strictly bypass Service Worker for /roof4u/ sub-project
+      return;
+    }
+  } catch(e) {}
 });

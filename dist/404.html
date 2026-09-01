@@ -12,9 +12,12 @@
       (function() {
         var l = window.location;
         var pathname = l.pathname;
+        try {
+          pathname = decodeURIComponent(l.pathname);
+        } catch (e) {}
         
-        // Strict isolation regex: matches /roof4u or /roof4u/* (case-insensitive)
-        var isRoof4uBypass = /^\/roof4u(\/.*)?$/i.test(pathname);
+        // Strict isolation regex: matches /roof4u or /roof4u/* or //roof4u (case-insensitive)
+        var isRoof4uBypass = /^\/+roof4u(\/.*)?$/i.test(pathname);
         
         if (isRoof4uBypass) {
           // Do NOT redirect /roof4u/ paths to root SPA.
@@ -145,7 +148,7 @@
       <div id="path-container" class="path-display" style="display: none;"></div>
       <p id="desc">If you are not redirected automatically within a few seconds, please choose a destination below.</p>
       <div class="actions">
-        <a id="btn-home" href="./" class="btn btn-primary">Return to Swarm Hub</a>
+        <a id="btn-home" href="/" class="btn btn-primary">Return to Swarm Hub</a>
         <a id="btn-roof" href="/roof4u/" class="btn btn-secondary" style="display: none;">Open /roof4u/ Project</a>
       </div>
     </div>
@@ -153,7 +156,10 @@
       // Dynamic fallback rendering for bypassed sub-projects
       (function() {
         var pathname = window.location.pathname;
-        if (/^\/roof4u(\/.*)?$/i.test(pathname)) {
+        try {
+          pathname = decodeURIComponent(window.location.pathname);
+        } catch (e) {}
+        if (/^\/+roof4u(\/.*)?$/i.test(pathname)) {
           var badge = document.getElementById('status-badge');
           if (badge) {
             badge.textContent = 'Sub-Project Isolated';
